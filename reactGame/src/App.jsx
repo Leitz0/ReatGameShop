@@ -1,6 +1,11 @@
 import "./App.css";
+import Provider from "./context/Provider";
 import Routes from "./Routes/Routes";
 
 export default function App() {
-  return <Routes />;
+  return (
+    <Provider>
+      <Routes />
+    </Provider>
+  );
 }
