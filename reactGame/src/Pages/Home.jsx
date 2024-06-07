@@ -1,3 +1,8 @@
+import Container from '@mui/material/Container';
+import Button from '@mui/material/Button';
+
 export default function Home() {
-  return <h1>Home</h1>;
+  return (
+  <Container><Button variant="contained" >Olá!</Button></Container>
+  )
 }
