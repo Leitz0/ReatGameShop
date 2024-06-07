@@ -10,6 +10,8 @@ import { Link } from 'react-router-dom';
 
 
 
+
+
 const Login = () => {
   
   const [username, setUsername] = useState("");
@@ -25,7 +27,23 @@ const Login = () => {
   };
 
   return (
-    <Box sx={{ '& > :not(style)': { m: 1 } }}>
+    <Box sx={{ 
+      display: 'flex',
+      justifyContent: 'center',
+      alignItems: 'center',
+      height: '80vh',
+      backgroundColor: 'rgba(255, 255, 255, 0.15);',
+      position: 'relative',
+      top: '50%',
+      left: '50%',
+      transform: 'translate(-50%, 12%)',
+      width: '30%',
+      borderRadius: 3,
+      boxShadow: 4,
+     }}>
+     
+
+      
     <form onSubmit={handleSubmit}>
       <h2>Realizar acesso</h2>
       
@@ -82,6 +100,7 @@ const Login = () => {
     </div>    
   </form>
   </Box>
+  
 );
 }
 
