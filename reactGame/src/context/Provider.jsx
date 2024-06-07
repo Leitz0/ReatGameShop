@@ -2,10 +2,16 @@ import { useState } from "react";
 import {PropTypes} from "prop-types";
 import Context from "./Context";
 
-export default function Provider({ children }) {
-  const [user, setUser] = useState("");
+const defaultUsuario = {
+  nome: "",
+  email: "",
+  senha: "",
+};
 
-  return <Context.Provider value={{ user, setUser }}>{children}</Context.Provider>;
+export default function Provider({ children }) {
+  const [usuario, setUsuario] = useState(defaultUsuario);
+
+  return <Context.Provider value={{ usuario, setUsuario }}>{children}</Context.Provider>;
 }
 
 Provider.propTypes = {
