@@ -1,4 +1,4 @@
-import "./App.css";
+
 import Provider from "./context/Provider";
 import Routes from "./Routes/Routes";
 
