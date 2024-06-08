@@ -47,6 +47,12 @@
       "nome": "Lala",
       "email": "lala@email.com",
       "senha": "123456"
+    },
+    {
+      "id": "1717855698252",
+      "nome": "alalal",
+      "email": "email@email.com",
+      "senha": "123456"
     }
   ],
   "produto": [
@@ -59,7 +65,7 @@
       "categoria": "eletronico",
       "quantidade": 25,
       "gostei": 3,
-      "naoGostei": 7
+      "naoGostei": 9
     },
     {
       "id": "2",

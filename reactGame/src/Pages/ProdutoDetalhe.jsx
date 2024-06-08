@@ -12,7 +12,6 @@ const ProdutoDetalhe = () => {
   const getProduto = async () => {
     const response = await api.get(`/produto/${id}`);
     SetCardProduto(response.data);
-    console.log(response.data);
   };
 
   useEffect(() => {
