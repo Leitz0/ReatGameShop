@@ -19,6 +19,8 @@ export default function Produtos() {
   }, []);
   return (
     <>
+
+
       <Navbar />
       <Container maxWidth={false}>
         <Typography
@@ -38,6 +40,7 @@ export default function Produtos() {
           ))}
         </div>
       </Container>
+
     </>
   );
 }
