@@ -36,7 +36,7 @@ export default function Produtos() {
         </Typography>
         <div className="container">
           {produtos.map((produto) => (
-            <CardProduto key={produto.id} produto={produto} />
+            <CardProduto key={produto.id} produto={produto} saibaMais />
           ))}
         </div>
       </Container>
