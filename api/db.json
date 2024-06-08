@@ -77,7 +77,41 @@
       "quantidade": 25,
       "gostei": null,
       "naoGostei": null
-    }
+    },
+    {
+      "id": 3,
+      "imgUrl": "https://products.eneba.games/resized-products/hX7PgHs0pk8xpBHYDvwV1Vs0AcpIDw15HmIafd8YReE_350x200_1x-0.jpeg",
+      "nome": "Red Dead Redemption 2",
+      "descricao": "É um jogo de ação e aventura desenvolvido pela Rockstar Games. Ambientado no final do século XIX, no Velho Oeste.",
+      "preco": 249.90,
+      "categoria": "Xbox One",
+      "quantidade": 10,
+      "gostei": 456,
+      "naoGostei": 6
+  },
+  {
+      "id": 4,
+      "imgUrl": "https://products.eneba.games/resized-products/YQZ1Li_tMpRT2BjujwMi9lnEsaG6J8vzaaR21MrllB8_350x200_1x-0.jpeg",
+      "nome": "GTA V (Grand Theft Auto V)",
+      "descricao": "O jogo se passa no estado ficcional de San Andreas, baseado na Califórnia do Sul, e segue três criminosos que tentam realizar assaltos enquanto são perseguidos por diversas forças da lei.",
+      "preco": 199.90,
+      "categoria": "Xbox One",
+      "quantidade": 12,
+      "gostei": 550,
+      "naoGostei": 3
+  },
+  {
+      "id": 5,
+      "imgUrl": "https://products.eneba.games/resized-products/efNJ53jAI1DcsKAA4KcKClgG_50zZ3Q8u78eTrZbQ6s_350x200_1x-0.jpeg",
+      "nome": "Resident Evil 4",
+      "descricao": "A história segue Leon S. Kennedy, um agente especial dos Estados Unidos, enquanto ele tenta resgatar Ashley Graham.",
+      "preco": 149.90,
+      "categoria": "Xbox One",
+      "quantidade": 24,
+      "gostei": 300,
+      "naoGostei": 8
+  }
+  
   ],
   "pedido": [
     {
