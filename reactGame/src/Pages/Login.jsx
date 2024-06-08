@@ -32,7 +32,7 @@ const Login = () => {
       justifyContent: 'center',
       alignItems: 'center',
       height: '80vh',
-      backgroundColor: 'rgba(255, 255, 255, 0.15);',
+      backgroundColor: '#CBD6EB',
       position: 'relative',
       top: '50%',
       left: '50%',
@@ -44,10 +44,10 @@ const Login = () => {
      
 
       
-    <form onSubmit={handleSubmit}>
+    <form onSubmit={handleSubmit} style={{ textAlign: 'center' }}>
       <h2>Realizar acesso</h2>
       
-      <FormControl variant="standard">
+      <FormControl variant="standard" style={{ textAlign: 'center' }}>
         <InputLabel htmlFor="input-with-icon-adornment">E-mail</InputLabel>
         <Input
           id="input-with-icon-adornment"
@@ -64,7 +64,7 @@ const Login = () => {
         />
       </FormControl><br></br>
       
-      <FormControl variant="standard">
+      <FormControl variant="standard" style={{ textAlign: 'center' }}>
         <InputLabel htmlFor="input-with-icon-adornment">Senha</InputLabel>
         <Input
           id="input-with-icon-adornment"
@@ -81,7 +81,7 @@ const Login = () => {
         />
       </FormControl><br></br>
 
-      <div className="recall-forget">
+      <div className="recall-forget" style={{ textAlign: 'center' }}>
         <label>
           <input type="checkbox" />
           Lembre de mim
@@ -90,12 +90,23 @@ const Login = () => {
       </div>
       
       <Link to="/produtos">
-      <button variant="contained">Login</button>
-    </Link>
+    <button variant="contained" color="success" style={{ display: 'flex',
+        justifyContent: 'center', 
+        alignItems: 'center',
+        width: '100%', 
+        height: '30px', 
+        backgroundColor: 'hsl(248.54deg 73.3% 11.44%)',
+        color: 'white',
+        padding: '10px 10px', 
+        borderRadius: 4,
+        textAlign: 'center' }}>
+      Login
+    </button>
+</Link>
       
-    <div className="signup-link">
+    <div className="signup-link" style={{ textAlign: 'center' }}>
     <p>
-    Não tem uma conta? <a href="/cadastro">Registar</a>
+    Não tem uma conta? <br></br><a href="/cadastro">Registar</a>
     </p>
     </div>    
   </form>
