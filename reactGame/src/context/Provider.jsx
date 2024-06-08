@@ -13,7 +13,15 @@ export default function Provider({ children }) {
   const [carrinho, setCarrinho] = useState([]);
 
   const adicionarItem = (produto) => {
-    setCarrinho([...carrinho, produto]);
+    carrinho.find((item) => item.id === produto.id)
+      ? setCarrinho(
+          carrinho.map((item) =>
+            item.id === produto.id
+              ? { ...item, quantidadeComprado: item.quantidadeComprado + 1 }
+              : item
+          )
+        )
+      : setCarrinho([...carrinho, { ...produto, quantidadeComprado: 1 }]);
   };
 
   const limparCarrinho = () => {
@@ -21,7 +29,9 @@ export default function Provider({ children }) {
   };
 
   return (
-    <Context.Provider value={{ usuario, setUsuario, carrinho, adicionarItem, limparCarrinho }}>
+    <Context.Provider
+      value={{ usuario, setUsuario, carrinho, adicionarItem, limparCarrinho }}
+    >
       {children}
     </Context.Provider>
   );
