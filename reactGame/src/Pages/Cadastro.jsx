@@ -1,4 +1,4 @@
-import React, { useState } from "react";
+import React, { useState, useEffect } from "react";
 import {
   TextField,
   Button,
@@ -12,6 +12,7 @@ import {
   Box,
 } from "@mui/material";
 import { useHistory } from "react-router-dom";
+import api from "../api/api";
 
 const Cadastro = () => {
   const [nome, setNome] = useState("");
@@ -20,13 +21,20 @@ const Cadastro = () => {
   const [open, setOpen] = useState(false);
   const [error, setError] = useState("");
   const history = useHistory();
-
+  useEffect(() => {
+    async function teste() {
+      const teste1 = await api.get("/users");
+      // const response = await teste1.json()
+      console.log(teste1.data);
+    }
+    teste();
+  }, []);
   const validateEmail = (email) => {
     const re = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
     return re.test(String(email).toLowerCase());
   };
 
-  const handleSubmit = (e) => {
+  const handleSubmit = async (e) => {
     e.preventDefault();
 
     if (!nome || !email || !senha) {
@@ -40,21 +48,10 @@ const Cadastro = () => {
     }
 
     const novoUsuario = { id: Date.now().toString(), nome, email, senha };
-
-    fetch("http://localhost:3001/users", {
-      method: "POST",
-      headers: { "Content-Type": "application/json" },
-      body: JSON.stringify(novoUsuario),
-    })
-      .then((response) => response.json())
-      .then((data) => {
-        console.log("Usuário adicionado:", data);
-
-        setOpen(true);
-      })
-      .catch((error) => {
-        console.error("Erro ao adicionar usuário:", error);
-      });
+    const result = await api.post("/users", JSON.stringify(novoUsuario));
+    console.log(result);
+    if (result.status === 201) return setOpen(true);
+    return console.error("Erro ao adicionar usuário:", error);
   };
 
   const handleClose = () => {
@@ -73,7 +70,7 @@ const Cadastro = () => {
       }}
     >
       <Container maxWidth="sm">
-        <Typography variant="h4"  gutterBottom style={{ color: '#545454' }}>
+        <Typography variant="h4" gutterBottom style={{ color: "#545454" }}>
           Cadastro de usuário
         </Typography>
         <form onSubmit={handleSubmit}>
