@@ -1,15 +1,18 @@
-import * as React from 'react';
-import Card from '@mui/material/Card';
-import CardActions from '@mui/material/CardActions';
-import CardContent from '@mui/material/CardContent';
-import CardMedia from '@mui/material/CardMedia';
-import Button from '@mui/material/Button';
-import Typography from '@mui/material/Typography';
+import { useContext } from "react";
+import Card from "@mui/material/Card";
+import CardActions from "@mui/material/CardActions";
+import CardContent from "@mui/material/CardContent";
+import CardMedia from "@mui/material/CardMedia";
+import Button from "@mui/material/Button";
+import Typography from "@mui/material/Typography";
 import { useHistory } from "react-router-dom";
-import { AspectRatio } from '@mui/icons-material';
 
-export default function CardProduto({id, imgUrl, nome, descricao, preco, categoria, quantidade,gostei,naoGostei,saibaMais}) {
+import Context from "../context/Context";
+
+export default function CardProduto({ produto }) {
+  const { id, imgUrl, nome, descricao, preco, categoria, quantidade,gostei,naoGostei,saibaMais } = produto;
   const history = useHistory();
+  const { adicionarItem } = useContext(Context);
 
   return (
     <Card sx={{ maxWidth: 345 }}>
@@ -25,7 +28,7 @@ export default function CardProduto({id, imgUrl, nome, descricao, preco, categor
         <Typography gutterBottom variant="h5" component="div">
           {nome}
         </Typography>
-        <Typography variant="body2" display="block" >
+        <Typography variant="body2" display="block">
           {categoria}
         </Typography>
         <Typography variant="body2" color="text.secondary">
@@ -36,8 +39,12 @@ export default function CardProduto({id, imgUrl, nome, descricao, preco, categor
         </Typography>
       </CardContent>
       <CardActions>
-        <Button size="small">Adicionar ao carrinho</Button>
-        {saibaMais && <Button onClick={() => history.push(`/produto/${id}`) } size="small">Saiba mais</Button>}
+
+        <Button onClick={() => adicionarItem(produto)} size="small">
+          Adicionar ao carrinho
+        </Button>
+         {saibaMais && <Button onClick={() => history.push(`/produto/${id}`) } size="small">Saiba mais</Button>}
+
       </CardActions>
     </Card>
   );

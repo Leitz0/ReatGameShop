@@ -51,7 +51,7 @@ export default function TabelaCarrinho({ itens }) {
                 <TableCell align="center">{row.nome}</TableCell>
                 <TableCell align="center">{row.preco}</TableCell>
                 <TableCell align="center">{row.descricao}</TableCell>
-                <TableCell align="center">{row.quantidade}</TableCell>
+                <TableCell align="center">{row.quantidadeComprado}</TableCell>
               </TableRow>
             ))}
           </TableBody>
