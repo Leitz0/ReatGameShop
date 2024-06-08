@@ -41,6 +41,18 @@
       "nome": "Leilson Marques Felicio",
       "email": "leilson.felicio@gmail.com",
       "senha": "26262242"
+    },
+    {
+      "id": "1717852160702",
+      "nome": "Lala",
+      "email": "lala@email.com",
+      "senha": "123456"
+    },
+    {
+      "id": "1717855698252",
+      "nome": "alalal",
+      "email": "email@email.com",
+      "senha": "123456"
     }
   ],
   "produto": [
@@ -52,8 +64,8 @@
       "preco": 100,
       "categoria": "eletronico",
       "quantidade": 25,
-      "gostei": 10,
-      "naoGostei": 10
+      "gostei": 3,
+      "naoGostei": 9
     },
     {
       "id": "2",
@@ -63,8 +75,8 @@
       "preco": 100,
       "categoria": "eletronico",
       "quantidade": 25,
-      "gostei": 10,
-      "naoGostei": 10
+      "gostei": null,
+      "naoGostei": null
     }
   ],
   "pedido": [

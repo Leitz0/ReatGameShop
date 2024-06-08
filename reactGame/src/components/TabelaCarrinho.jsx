@@ -22,6 +22,18 @@ const columns = [
     minWidth: 170,
     align: "right",
   },
+  {
+    id: "preço",
+    label: "Valor unitário",
+    minWidth: 170,
+    align: "right",
+  },
+  {
+    id: "preçoTotal",
+    label: "Valor total",
+    minWidth: 170,
+    align: "right",
+  },
 ];
 
 export default function TabelaCarrinho({ itens }) {
@@ -33,6 +45,11 @@ export default function TabelaCarrinho({ itens }) {
             <TableRow>
               {columns.map((column) => (
                 <TableCell
+                  sx={{
+                    backgroundColor: "#f5f5f5",
+                    color: "#000000",
+                    fontWeight: "bold",
+                  }}
                   key={column.id}
                   align="center"
                   style={{ minWidth: column.minWidth }}
@@ -45,6 +62,7 @@ export default function TabelaCarrinho({ itens }) {
           <TableBody>
             {itens.map((row) => (
               <TableRow
+                hover
                 key={row.id}
                 sx={{ "&:last-child td, &:last-child th": { border: 0 } }}
               >
@@ -52,6 +70,18 @@ export default function TabelaCarrinho({ itens }) {
                 <TableCell align="center">{row.preco}</TableCell>
                 <TableCell align="center">{row.descricao}</TableCell>
                 <TableCell align="center">{row.quantidadeComprado}</TableCell>
+                <TableCell align="center">
+                  {row.preco.toLocaleString("pt-br", {
+                    style: "currency",
+                    currency: "BRL",
+                  })}
+                </TableCell>
+                <TableCell align="center">
+                  {(row.preco * row.quantidadeComprado).toLocaleString("pt-br", {
+                    style: "currency",
+                    currency: "BRL",
+                  })}
+                </TableCell>
               </TableRow>
             ))}
           </TableBody>

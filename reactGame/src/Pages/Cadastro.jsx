@@ -1,4 +1,4 @@
-import React, { useState } from "react";
+import { useState } from "react";
 import {
   TextField,
   Button,
@@ -59,7 +59,7 @@ const Cadastro = () => {
 
   const handleClose = () => {
     setOpen(false);
-    history.push("/produto");
+    history.push("/produtos");
   };
 
   return (
@@ -73,7 +73,7 @@ const Cadastro = () => {
       }}
     >
       <Container maxWidth="sm">
-        <Typography variant="h4"  gutterBottom style={{ color: '#545454' }}>
+        <Typography variant="h4" gutterBottom style={{ color: "#545454" }}>
           Cadastro de usuário
         </Typography>
         <form onSubmit={handleSubmit}>
@@ -111,9 +111,7 @@ const Cadastro = () => {
         <Dialog open={open} onClose={handleClose}>
           <DialogTitle>Cadastro realizado</DialogTitle>
           <DialogContent>
-            <DialogContentText>
-              Usuário cadastrado com sucesso!
-            </DialogContentText>
+            <DialogContentText>Usuário cadastrado com sucesso!</DialogContentText>
           </DialogContent>
           <DialogActions>
             <Button onClick={handleClose} color="primary">
