@@ -8,9 +8,7 @@ const ProdutoDetalhe = () => {
   const { id } = useParams()
   const [cardProduto, SetCardProduto] = useState({})
 
-  const refresh = () =>{
-    window.location.reload()
-  }
+ 
 
   useEffect(() => {
     getProduto()
@@ -22,21 +20,7 @@ const ProdutoDetalhe = () => {
     console.log(response.data)
   }
  
-  const hadleGosteiClick = async() =>{
-  const response = await api.patch (`/produto/${id}`,
-    {gostei: gostei + 1}
-  )
-   if (response.status == '200')
-    refresh()
-  }
-
-  const hadleNaoGosteiClick = async () =>{
-    const response = await api.patch (`/produto/${id}`,
-      {naoGostei: naoGostei + 1}
-    )
-     if (response.status == '200')
-      refresh()
-    }
+  
 
   return (
     <>
@@ -50,11 +34,10 @@ const ProdutoDetalhe = () => {
         quantidade= {cardProduto.quantidade}
         gostei={cardProduto.gostei}
         naoGostei={cardProduto.naoGostei}
+        avaliacao
         
       />
-      <p>Gostou do produto?</p>
-      <button onClick={hadleGosteiClick}>Sim</button>
-      <button onClick={hadleNaoGosteiClick}>Não</button>
+   
 
 
     </>
