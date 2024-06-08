@@ -68,7 +68,7 @@ export default function TabelaCarrinho({ itens }) {
               >
                 <TableCell align="center">{row.nome}</TableCell>
                 <TableCell align="center">{row.preco}</TableCell>
-                <TableCell align="center">{row.descricao}</TableCell>
+                <TableCell align="center">{row.categoria}</TableCell>
                 <TableCell align="center">{row.quantidadeComprado}</TableCell>
                 <TableCell align="center">
                   {row.preco.toLocaleString("pt-br", {
