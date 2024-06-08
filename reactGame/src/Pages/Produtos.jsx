@@ -32,6 +32,7 @@ export default function Produtos() {
           nome={produto.nome}
           preco={produto.preco}
           quantidade={produto.quantidade}
+          saibaMais
           
         />
       ))}

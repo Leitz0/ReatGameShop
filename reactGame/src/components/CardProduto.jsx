@@ -6,18 +6,21 @@ import CardMedia from '@mui/material/CardMedia';
 import Button from '@mui/material/Button';
 import Typography from '@mui/material/Typography';
 import { useHistory } from "react-router-dom";
+import { AspectRatio } from '@mui/icons-material';
 
-export default function CardProduto({id, imgUrl, nome, descricao, preco, categoria, quantidade}) {
+export default function CardProduto({id, imgUrl, nome, descricao, preco, categoria, quantidade,gostei,naoGostei,saibaMais}) {
   const history = useHistory();
 
   return (
     <Card sx={{ maxWidth: 345 }}>
+      
+        {/* <img src={imgUrl} srcSet={imgUrl} alt="" /> */}
       <CardMedia
         component="img"
-        sx={{ widt: 140, height: 140 }}
+        sx={{ widt: 140, height: 140 , objectFit: "contain" }}
         image={imgUrl}
         title={nome}
-      />
+      />  
       <CardContent>
         <Typography gutterBottom variant="h5" component="div">
           {nome}
@@ -34,7 +37,7 @@ export default function CardProduto({id, imgUrl, nome, descricao, preco, categor
       </CardContent>
       <CardActions>
         <Button size="small">Adicionar ao carrinho</Button>
-        <Button onClick={() => history.push(`/produtos/${id}`) } size="small">Saiba mais</Button>
+        {saibaMais && <Button onClick={() => history.push(`/produto/${id}`) } size="small">Saiba mais</Button>}
       </CardActions>
     </Card>
   );

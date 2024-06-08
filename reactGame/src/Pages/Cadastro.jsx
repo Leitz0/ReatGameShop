@@ -41,7 +41,7 @@ const Cadastro = () => {
 
     const novoUsuario = { id: Date.now().toString(), nome, email, senha };
 
-    fetch("http://localhost:3001/users", {
+    fetch("http://localhost:3000/users", {
       method: "POST",
       headers: { "Content-Type": "application/json" },
       body: JSON.stringify(novoUsuario),
