@@ -30,6 +30,7 @@ export default function Navbar() {
               letterSpacing: ".3rem",
               color: "inherit",
               textDecoration: "none",
+              cursor: "pointer",
             }}
           >
             HOME
@@ -39,10 +40,18 @@ export default function Navbar() {
 
           <Box sx={{ flexGrow: 0 }}>
             <Tooltip title="Ver carrinho">
-              <ShoppingCartIcon onClick={() => history.push("/carrinho")} />
+              <ShoppingCartIcon
+                onClick={() => history.push("/carrinho")}
+                sx={{ cursor: "pointer" }}
+              />
             </Tooltip>
             <Tooltip title="Fazer login">
-              <AccountCircleIcon />
+              <AccountCircleIcon
+                sx={{
+                  cursor: "pointer",
+                  ml: 2,
+                }}
+              />
             </Tooltip>
           </Box>
         </Toolbar>

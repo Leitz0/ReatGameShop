@@ -10,7 +10,6 @@ export default function Carrinho() {
   return (
     <>
       <Navbar />
-
       <Container>
         <Typography variant="h3" align="center">
           Carrinho
@@ -25,8 +24,14 @@ export default function Carrinho() {
         )}
         <br />
         <Stack spacing={2} direction="row" justifyContent="center">
-          <Button variant="contained">Finalizar Compra</Button>
-          <Button onClick={() => limparCarrinho()} variant="contained">
+          <Button disabled={carrinho.length === 0} variant="contained">
+            Finalizar Compra
+          </Button>
+          <Button
+            disabled={carrinho.length === 0}
+            onClick={() => limparCarrinho()}
+            variant="contained"
+          >
             Limpar Carrinho
           </Button>
         </Stack>

@@ -1,6 +1,7 @@
 import { useEffect, useState } from "react";
 import Container from "@mui/material/Container";
 import CardProduto from "../components/CardProduto";
+import Typography from "@mui/material/Typography";
 import Navbar from "../components/Navbar";
 import "./Produtos.css";
 
@@ -20,7 +21,17 @@ export default function Produtos() {
     <>
       <Navbar />
       <Container maxWidth={false}>
-        <h1>PRODUTOS</h1>
+        <Typography
+          variant="h2"
+          display="block"
+          align="center"
+          color="text.primary"
+          sx={{
+            margin: "2rem 0",
+          }}
+        >
+          PRODUTOS
+        </Typography>
         <div className="container">
           {produtos.map((produto) => (
             <CardProduto key={produto.id} produto={produto} />
