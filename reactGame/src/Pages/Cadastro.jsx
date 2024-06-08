@@ -24,7 +24,6 @@ const Cadastro = () => {
   useEffect(() => {
     async function teste() {
       const teste1 = await api.get("/users");
-      // const response = await teste1.json()
       console.log(teste1.data);
     }
     teste();

@@ -9,7 +9,7 @@ export default function Produtos() {
   
   useEffect(() => {
     const dados = async () => {
-      const data = await fetch('http://localhost:3000/produto');
+      const data = await fetch('http://localhost:3001/produto');
       const response = await data.json()
       console.log(response)
       setProdutos(response)
