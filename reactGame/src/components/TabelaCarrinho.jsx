@@ -9,7 +9,6 @@ import PropTypes from "prop-types";
 
 const columns = [
   { id: "produto", label: "Produto", minWidth: 170 },
-  { id: "preco", label: "Preco", minWidth: 100 },
   {
     id: "categoria",
     label: "Categoria",
@@ -47,7 +46,7 @@ export default function TabelaCarrinho({ itens }) {
                 <TableCell
                   sx={{
                     backgroundColor: "#f5f5f5",
-                    color: "#000000",
+                    color: "#364B74",
                     fontWeight: "bold",
                   }}
                   key={column.id}
@@ -67,7 +66,6 @@ export default function TabelaCarrinho({ itens }) {
                 sx={{ "&:last-child td, &:last-child th": { border: 0 } }}
               >
                 <TableCell align="center">{row.nome}</TableCell>
-                <TableCell align="center">{row.preco}</TableCell>
                 <TableCell align="center">{row.categoria}</TableCell>
                 <TableCell align="center">{row.quantidadeComprado}</TableCell>
                 <TableCell align="center">
