@@ -83,6 +83,12 @@
       "nome": "sdsds",
       "email": "sdsd@dsd.com",
       "senha": "dsdsd"
+    },
+    {
+      "id": "3c5663e0-1648-43be-a364-43f964fb6ecd",
+      "nome": "lucas",
+      "email": "lucas@email.com",
+      "senha": "123"
     }
   ],
   "produto": [

@@ -1,5 +1,6 @@
 import { useState, useContext } from "react";
 import Context from "../context/Context";
+import { v4 as uuidv4 } from "uuid";
 import {
   TextField,
   Button,
@@ -37,7 +38,7 @@ const Cadastro = () => {
 
   const handleSubmit = async (e) => {
     e.preventDefault();
-
+    const uuid = uuidv4();
     setError("");
 
     if (!nome || !email || !senha || !confirmarSenha) {
@@ -55,7 +56,7 @@ const Cadastro = () => {
       return;
     }
 
-    const novoUsuario = { id: Date.now().toString(), nome, email, senha };
+    const novoUsuario = { id: uuid, nome, email, senha };
 
     try {
       const response = await fetch("http://localhost:3001/users", {
