@@ -9,26 +9,29 @@ import FormControl from "@mui/material/FormControl";
 import AccountCircle from "@mui/icons-material/AccountCircle";
 import Button from "@mui/material/Button";
 import api from "../api/api";
+import ModalSenhaIncorreta from "../components/ModalSenhaIncorreta";
 
 const Login = () => {
   const [username, setUsername] = useState("");
   const [password, setPassword] = useState("");
+  const [senhaIncorreta, setSenhaIncorreta] = useState(false);
 
   const history = useHistory();
   const { setUsuario } = useContext(Context);
 
   useEffect(() => {
     setUsuario(null);
-  }, [])
+  }, []);
 
-  const handleLogin = async () => {
+  const handleLogin = async (e) => {
+    e.preventDefault();
     try {
       const usuarios = await api.get("/users");
       const usuario = usuarios.data.find(
         (usuario) => usuario.email === username && usuario.senha === password
       );
       if (!usuario) {
-        console.error("Usuário ou senha inválidos");
+        setSenhaIncorreta(true);
         return;
       }
       setUsuario(usuario);
@@ -37,12 +40,6 @@ const Login = () => {
     } catch (error) {
       console.error("Erro ao efetuar login:", error);
     }
-  };
-
-  const handleSubmit = (event) => {
-    event.preventDefault();
-
-    console.log("Dados de Login:", { username, password });
   };
 
   return (
@@ -62,7 +59,8 @@ const Login = () => {
         boxShadow: 4,
       }}
     >
-      <form onSubmit={handleSubmit} style={{ textAlign: "center" }}>
+      <ModalSenhaIncorreta open={senhaIncorreta} setOpen={setSenhaIncorreta} />
+      <form onSubmit={handleLogin} style={{ textAlign: "center" }}>
         <h2>Realizar acesso</h2>
 
         <FormControl variant="standard" style={{ textAlign: "center" }}>
@@ -101,9 +99,9 @@ const Login = () => {
         </FormControl>
         <br></br>
 
-          <Button onClick={handleLogin} variant="contained" color="success">
-            Login
-          </Button>
+        <Button type="submit" variant="contained" color="success">
+          Login
+        </Button>
 
         <div className="signup-link" style={{ textAlign: "center" }}>
           <p>
