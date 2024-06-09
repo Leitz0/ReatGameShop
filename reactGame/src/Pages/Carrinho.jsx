@@ -1,6 +1,6 @@
 import { useContext } from "react";
 import TabelaCarrinho from "../components/TabelaCarrinho";
-import { Container, Typography, Button, Stack, Box, Icon } from "@mui/material";
+import { Container, Typography, Button, Stack, Box } from "@mui/material";
 import Context from "../context/Context";
 import Navbar from "../components/Navbar";
 import ShoppingCartIcon from "@mui/icons-material/ShoppingCart";
