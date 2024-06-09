@@ -1,8 +1,7 @@
-import Container from '@mui/material/Container';
-import Button from '@mui/material/Button';
+import { Redirect } from "react-router-dom";
 
 export default function Home() {
   return (
-  <Container><Button variant="contained" >Olá!</Button></Container>
-  )
+    <Redirect to="/produtos" />
+  );
 }
