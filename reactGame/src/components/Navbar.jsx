@@ -67,6 +67,7 @@ export default function Navbar() {
             </Tooltip>
             <Tooltip title="Fazer login">
               <AccountCircleIcon
+                onClick={() => history.push("/login")}
                 sx={{
                   cursor: "pointer",
                   ml: 2,
