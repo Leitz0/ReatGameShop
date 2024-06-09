@@ -8,9 +8,12 @@ import AdbIcon from "@mui/icons-material/Adb";
 import ShoppingCartIcon from "@mui/icons-material/ShoppingCart";
 import AccountCircleIcon from "@mui/icons-material/AccountCircle";
 import { useHistory } from "react-router-dom";
+import { useContext } from "react";
+import Context from "../context/Context";
 
 export default function Navbar() {
   const history = useHistory();
+  const { usuario } = useContext(Context);
 
   return (
     <AppBar position="static">
@@ -35,6 +38,23 @@ export default function Navbar() {
           >
             HOME
           </Typography>
+          {usuario?.nome && (
+            <Typography
+              onClick={() => history.push("/produtos")}
+              variant="h6"
+              noWrap
+              component="p"
+              sx={{
+                display: { xs: "none", md: "flex" },
+                fontFamily: "monospace",
+                fontWeight: 700,
+                letterSpacing: ".3rem",
+                textDecoration: "none",
+              }}
+            >
+              Olá {usuario.nome}!
+            </Typography>
+          )}
 
           <Box sx={{ flexGrow: 1, display: { xs: "none", md: "flex" } }}></Box>
 
