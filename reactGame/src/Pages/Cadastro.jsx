@@ -1,4 +1,6 @@
-import { useState } from "react";
+import { useState, useContext } from "react";
+import Context from "../context/Context";
+import { v4 as uuidv4 } from "uuid";
 import {
   TextField,
   Button,
@@ -25,7 +27,9 @@ const Cadastro = () => {
   const [open, setOpen] = useState(false);
   const [error, setError] = useState("");
   const [showPassword, setShowPassword] = useState(false);
+
   const history = useHistory();
+  const { setUsuario } = useContext(Context);
 
   const validateEmail = (email) => {
     const re = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
@@ -34,8 +38,8 @@ const Cadastro = () => {
 
   const handleSubmit = async (e) => {
     e.preventDefault();
-
-    setError(""); 
+    const uuid = uuidv4();
+    setError("");
 
     if (!nome || !email || !senha || !confirmarSenha) {
       setError("Todos os campos devem ser preenchidos.");
@@ -52,7 +56,7 @@ const Cadastro = () => {
       return;
     }
 
-    const novoUsuario = { id: Date.now().toString(), nome, email, senha };
+    const novoUsuario = { id: uuid, nome, email, senha };
 
     try {
       const response = await fetch("http://localhost:3001/users", {
@@ -67,6 +71,7 @@ const Cadastro = () => {
 
       const data = await response.json();
       console.log("Usuário adicionado:", data);
+      setUsuario(data);
       setOpen(true);
     } catch (error) {
       setError(error.message);
@@ -164,7 +169,11 @@ const Cadastro = () => {
                   variant="contained"
                   color="primary"
                   fullWidth
-                  style={{ marginRight: "10px", backgroundColor: "#364B74", color: "#FFFFFF" }}
+                  style={{
+                    marginRight: "10px",
+                    backgroundColor: "#364B74",
+                    color: "#FFFFFF",
+                  }}
                 >
                   Cadastrar
                 </Button>
