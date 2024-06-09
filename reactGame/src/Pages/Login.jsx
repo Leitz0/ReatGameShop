@@ -1,5 +1,5 @@
 import { useState, useContext, useEffect } from "react";
-import { useHistory } from "react-router-dom";
+import { useHistory, Link } from "react-router-dom";
 import Context from "../context/Context";
 import Box from "@mui/material/Box";
 import Input from "@mui/material/Input";
@@ -106,7 +106,7 @@ const Login = () => {
         <div className="signup-link" style={{ textAlign: "center" }}>
           <p>
             Não tem uma conta? <br></br>
-            <a href="/cadastro">Registar</a>
+            <Link to="/cadastro">Registar</Link>
           </p>
         </div>
       </form>
