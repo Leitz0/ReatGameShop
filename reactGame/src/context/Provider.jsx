@@ -24,13 +24,43 @@ export default function Provider({ children }) {
       : setCarrinho([...carrinho, { ...produto, quantidadeComprado: 1 }]);
   };
 
+  const aumentarItemCarrinho = (id) => {
+    setCarrinho(
+      carrinho.map((item) =>
+        item.id === id
+          ? { ...item, quantidadeComprado: item.quantidadeComprado + 1 }
+          : item
+      )
+    );
+  };
+
+  const diminuirItemCarrinho = (id) => {
+    setCarrinho(
+      carrinho
+        .map((item) =>
+          item.id === id
+            ? { ...item, quantidadeComprado: item.quantidadeComprado - 1 }
+            : item
+        )
+        .filter((item) => item.quantidadeComprado > 0)
+    );
+  };
+
   const limparCarrinho = () => {
     setCarrinho([]);
   };
 
   return (
     <Context.Provider
-      value={{ usuario, setUsuario, carrinho, adicionarItem, limparCarrinho }}
+      value={{
+        usuario,
+        setUsuario,
+        carrinho,
+        adicionarItem,
+        limparCarrinho,
+        aumentarItemCarrinho,
+        diminuirItemCarrinho,
+      }}
     >
       {children}
     </Context.Provider>
