@@ -105,7 +105,7 @@
       "descricao": "Um mouse top",
       "preco": 100,
       "categoria": "eletronico",
-      "quantidade": 25,
+      "quantidade": 11,
       "gostei": 31,
       "naoGostei": 29
     },
@@ -116,7 +116,7 @@
       "descricao": "Um teclado top",
       "preco": 100,
       "categoria": "perifericos",
-      "quantidade": 24,
+      "quantidade": 15,
       "gostei": 9,
       "naoGostei": 8
     },
@@ -127,7 +127,7 @@
       "descricao": "É um jogo de ação e aventura desenvolvido pela Rockstar Games. Ambientado no final do século XIX, no Velho Oeste.",
       "preco": 249.9,
       "categoria": "Xbox One",
-      "quantidade": 9,
+      "quantidade": 6,
       "gostei": 456,
       "naoGostei": 6
     },
@@ -149,7 +149,7 @@
       "descricao": "A história segue Leon S. Kennedy, um agente especial dos Estados Unidos, enquanto ele tenta resgatar Ashley Graham.",
       "preco": 149.9,
       "categoria": "Xbox One",
-      "quantidade": 24,
+      "quantidade": 20,
       "gostei": 307,
       "naoGostei": 21
     }
@@ -193,6 +193,138 @@
         {
           "idProduto": "2",
           "quantidade": 1
+        }
+      ]
+    },
+    {
+      "id": "f7bd",
+      "idUser": "1717799624216",
+      "valorTotal": 200,
+      "itens": [
+        {
+          "idProduto": "1",
+          "quantidade": 2
+        }
+      ]
+    },
+    {
+      "id": "4320",
+      "idUser": "1717799624216",
+      "valorTotal": 749.7,
+      "itens": [
+        {
+          "idProduto": "3",
+          "quantidade": 3
+        }
+      ]
+    },
+    {
+      "id": "66c4",
+      "idUser": "1717799624216",
+      "valorTotal": 300,
+      "itens": [
+        {
+          "idProduto": "2",
+          "quantidade": 3
+        }
+      ]
+    },
+    {
+      "id": "641c",
+      "idUser": "1717799624216",
+      "valorTotal": 599.6,
+      "itens": [
+        {
+          "idProduto": "5",
+          "quantidade": 4
+        }
+      ]
+    },
+    {
+      "id": "3500",
+      "idUser": "1717799624216",
+      "valorTotal": 400,
+      "itens": [
+        {
+          "idProduto": "2",
+          "quantidade": 4
+        }
+      ]
+    },
+    {
+      "id": "be36",
+      "idUser": "1717799624216",
+      "valorTotal": 400,
+      "itens": [
+        {
+          "idProduto": "1",
+          "quantidade": 4
+        }
+      ]
+    },
+    {
+      "id": "8df6",
+      "idUser": "1717799624216",
+      "valorTotal": 100,
+      "itens": [
+        {
+          "idProduto": "1",
+          "quantidade": 1
+        }
+      ]
+    },
+    {
+      "id": "a9f2",
+      "idUser": "1717799624216",
+      "valorTotal": 200,
+      "itens": [
+        {
+          "idProduto": "1",
+          "quantidade": 2
+        }
+      ]
+    },
+    {
+      "id": "3088",
+      "idUser": "1717799624216",
+      "valorTotal": 200,
+      "itens": [
+        {
+          "idProduto": "2",
+          "quantidade": 2
+        }
+      ]
+    },
+    {
+      "id": "4326",
+      "idUser": "1717799624216",
+      "valorTotal": 100,
+      "itens": [
+        {
+          "idProduto": "1",
+          "quantidade": 1
+        }
+      ]
+    },
+    {
+      "id": "21d1",
+      "idUser": "1717799624216",
+      "valorTotal": 200,
+      "itens": [
+        {
+          "idProduto": "1",
+          "quantidade": 2
+        }
+      ]
+    },
+    {
+      "id": "46f3",
+      "idUser": "1717799624216",
+      "valorTotal": 200,
+      "itens": [
+        {
+          "idProduto": "1",
+          "quantidade": 2
         }
       ]
     }
