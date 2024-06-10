@@ -1,4 +1,3 @@
-
 import { useEffect, useState } from "react";
 import { Container, Typography } from "@mui/material";
 import CardProduto from "../components/CardProduto";
@@ -6,12 +5,26 @@ import Navbar from "../components/Navbar";
 import "./Produtos.css";
 import { Button, Link } from "@mui/material";
 import { useHistory } from "react-router-dom/cjs/react-router-dom.min";
+import { Search } from "@mui/icons-material";
 
 
 export default function Produtos() {
+  const [filtro, setFiltro] = useState('')
+  const [produtosFiltrados, setProdutosFiltrados] = useState([])
   const [produtos, setProdutos] = useState([]);
 
-  const history = useHistory()
+  
+
+  const history = useHistory();
+
+  const handlePesquisar = () => {
+    if(filtro.length > 0){
+      const filterProdutos = produtos.filter((produto) => produto.nome.toLowerCase().normalize()
+      .includes(filtro.toLocaleLowerCase().normalize()) )
+      return setProdutosFiltrados(filterProdutos)
+    } 
+    setProdutosFiltrados(produtos)
+  }
 
   useEffect(() => {
     const dados = async () => {
@@ -19,6 +32,7 @@ export default function Produtos() {
       const response = await data.json();
       const disponiveis = response.filter((produto) => produto.quantidade > 0);
       setProdutos(disponiveis);
+      setProdutosFiltrados(disponiveis);
     };
     dados();
   }, []);
@@ -33,6 +47,11 @@ export default function Produtos() {
       <Button style={{ margin: "10px" }}  variant="outlined" onClick={() => history.push("/produtos/PS5")}>PS5</Button>
       <Button style={{ margin: "10px" }}  variant="outlined" onClick={() => history.push("/produtos/PC")}>PC</Button>
       </div>
+      <div style={{ display: "flex", justifyContent: "center", margin: "20px" }}>
+      
+      <input type="text" placeholder="Pesquisar produto..." onChange={(p) => (setFiltro(p.target.value))} />
+      <Button style={{ margin: "10px" }} variant="contained" onClick={handlePesquisar}>Pesquisar</Button>
+      </div>
       <Container maxWidth={false}>
         <Typography
           variant="h2"
@@ -46,7 +65,7 @@ export default function Produtos() {
           PRODUTOS
         </Typography>
         <div className="container">
-          {produtos.map((produto) => (
+          {produtosFiltrados.map((produto) => (
             <CardProduto key={produto.id} produto={produto} saibaMais />
           ))}
         </div>
