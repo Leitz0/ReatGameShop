@@ -30,6 +30,7 @@ export default function Carrinho() {
           quantidade: item.quantidadeComprado,
         };
       }),
+      dataCompra: new Date().toISOString(),
     });
     if (response.status === 201) {
       carrinho.forEach(async (item) => {
