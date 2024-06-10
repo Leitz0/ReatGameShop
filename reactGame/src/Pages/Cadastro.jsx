@@ -56,16 +56,7 @@ const Cadastro = () => {
       return;
     }
 
-
-    fetch("http://localhost:3001/users", {
-      method: "POST",
-      headers: { "Content-Type": "application/json" },
-      body: JSON.stringify(novoUsuario),
-    })
-      .then((response) => response.json())
-      .then((data) => {
-        console.log("Usuário adicionado:", data);
-
+    const novoUsuario = { id: uuid, nome, email, senha };
 
     try {
       const response = await fetch("http://localhost:3001/users", {
