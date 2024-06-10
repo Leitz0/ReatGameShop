@@ -105,7 +105,7 @@
       "descricao": "É um jogo de simulação de futebol desenvolvido pela EA Sports.",
       "preco": 299.9,
       "categoria": "Xbox One",
-      "quantidade": 14,
+      "quantidade": 4,
       "gostei": 417,
       "naoGostei": 7
     },
@@ -446,7 +446,7 @@
       "descricao": "Embarque na jornada mais maluca da sua vida em It Takes Two, uma aventura de plataforma inovadora criada exclusivamente para o jogo co-op.",
       "preco": 49.9,
       "categoria": "PS5",
-      "quantidade": 6,
+      "quantidade": 5,
       "gostei": 34,
       "naoGostei": 1
     },
@@ -457,7 +457,7 @@
       "descricao": "Torne-se um mercenário caçador de monstros e embarque em uma épica jornada para encontrar a criança da profecia, uma arma viva capaz de incríveis destruições.",
       "preco": 150,
       "categoria": "PS5",
-      "quantidade": 24,
+      "quantidade": 21,
       "gostei": 345,
       "naoGostei": 60
     },
@@ -651,215 +651,81 @@
   ],
   "pedido": [
     {
-      "id": "1",
-      "valorTotal": 200,
-      "idUser": "8b15",
+      "id": "5298",
+      "idUser": "1717799624216",
+      "valorTotal": 1199.6,
       "itens": [
         {
           "idProduto": "1",
-          "quantidade": 1
-        },
-        {
-          "idProduto": "2",
-          "quantidade": 1
-        }
-      ]
-    },
-    {
-      "id": "8dc3",
-      "idUser": "67805aa6-40c9-48cd-88e2-647a5233a83b",
-      "valorTotal": 1599.2,
-      "itens": [
-        {
-          "idProduto": "4",
-          "quantidade": 8
-        }
-      ]
-    },
-    {
-      "id": "a47d",
-      "idUser": "67805aa6-40c9-48cd-88e2-647a5233a83b",
-      "valorTotal": 349.9,
-      "itens": [
-        {
-          "idProduto": "3",
-          "quantidade": 1
-        },
-        {
-          "idProduto": "2",
-          "quantidade": 1
-        }
-      ]
-    },
-    {
-      "id": "f7bd",
-      "idUser": "1717799624216",
-      "valorTotal": 200,
-      "itens": [
-        {
-          "idProduto": "1",
-          "quantidade": 2
-        }
-      ]
-    },
-    {
-      "id": "4320",
-      "idUser": "1717799624216",
-      "valorTotal": 749.7,
-      "itens": [
-        {
-          "idProduto": "3",
-          "quantidade": 3
-        }
-      ]
-    },
-    {
-      "id": "66c4",
-      "idUser": "1717799624216",
-      "valorTotal": 300,
-      "itens": [
-        {
-          "idProduto": "2",
-          "quantidade": 3
-        }
-      ]
-    },
-    {
-      "id": "641c",
-      "idUser": "1717799624216",
-      "valorTotal": 599.6,
-      "itens": [
-        {
-          "idProduto": "5",
+          "nome": "EA Sports FC 24",
+          "imgUrl": "https://needgames.com.br/wp-content/uploads/2023/08/ea-sports-fc-xbox-series-s-midia-digital-xbox-series-x.jpg",
+          "descricao": "É um jogo de simulação de futebol desenvolvido pela EA Sports.",
+          "preco": 299.9,
+          "categoria": "Xbox One",
           "quantidade": 4
         }
-      ]
+      ],
+      "dataCompra": "2024-06-10T20:24:34.281Z"
     },
     {
-      "id": "3500",
+      "id": "bf50",
       "idUser": "1717799624216",
-      "valorTotal": 400,
+      "valorTotal": 1199.6,
       "itens": [
         {
-          "idProduto": "2",
+          "idProduto": "1",
+          "nome": "EA Sports FC 24",
+          "imgUrl": "https://needgames.com.br/wp-content/uploads/2023/08/ea-sports-fc-xbox-series-s-midia-digital-xbox-series-x.jpg",
+          "descricao": "É um jogo de simulação de futebol desenvolvido pela EA Sports.",
+          "preco": 299.9,
+          "categoria": "Xbox One",
           "quantidade": 4
         }
-      ]
+      ],
+      "dataCompra": "2024-06-10T20:41:37.688Z"
     },
     {
-      "id": "be36",
+      "id": "f0ad",
       "idUser": "1717799624216",
-      "valorTotal": 400,
+      "valorTotal": 599.8,
       "itens": [
         {
           "idProduto": "1",
-          "quantidade": 4
-        }
-      ]
-    },
-    {
-      "id": "8df6",
-      "idUser": "1717799624216",
-      "valorTotal": 100,
-      "itens": [
-        {
-          "idProduto": "1",
-          "quantidade": 1
-        }
-      ]
-    },
-    {
-      "id": "a9f2",
-      "idUser": "1717799624216",
-      "valorTotal": 200,
-      "itens": [
-        {
-          "idProduto": "1",
-          "quantidade": 2
-        }
-      ]
-    },
-    {
-      "id": "3088",
-      "idUser": "1717799624216",
-      "valorTotal": 200,
-      "itens": [
-        {
-          "idProduto": "2",
-          "quantidade": 2
-        }
-      ]
-    },
-    {
-      "id": "4326",
-      "idUser": "1717799624216",
-      "valorTotal": 100,
-      "itens": [
-        {
-          "idProduto": "1",
-          "quantidade": 1
-        }
-      ]
-    },
-    {
-      "id": "21d1",
-      "idUser": "1717799624216",
-      "valorTotal": 200,
-      "itens": [
-        {
-          "idProduto": "1",
-          "quantidade": 2
-        }
-      ]
-    },
-    {
-      "id": "46f3",
-      "idUser": "1717799624216",
-      "valorTotal": 200,
-      "itens": [
-        {
-          "idProduto": "1",
-          "quantidade": 2
-        }
-      ]
-    },
-    {
-      "id": "8dc3",
-      "idUser": "1717787093589",
-      "valorTotal": 1599.3999999999999,
-      "itens": [
-        {
-          "idProduto": "2",
-          "nome": "Red Dead Redemption 2",
-          "descricao": "É um jogo de ação e aventura desenvolvido pela Rockstar Games. Ambientado no final do século XIX, no Velho Oeste.",
-          "preco": 249.9,
+          "nome": "EA Sports FC 24",
+          "imgUrl": "https://needgames.com.br/wp-content/uploads/2023/08/ea-sports-fc-xbox-series-s-midia-digital-xbox-series-x.jpg",
+          "descricao": "É um jogo de simulação de futebol desenvolvido pela EA Sports.",
+          "preco": 299.9,
           "categoria": "Xbox One",
           "quantidade": 2
+        }
+      ],
+      "dataCompra": "2024-06-10T20:42:08.137Z"
+    },
+    {
+      "id": "fcf4",
+      "idUser": "1717799624216",
+      "valorTotal": 499.9,
+      "itens": [
+        {
+          "idProduto": "32",
+          "nome": "It Takes Two",
+          "imgUrl": "https://www.raimundogamer.com.br/wp-content/uploads/2024/02/it-takes-two.jpg",
+          "descricao": "Embarque na jornada mais maluca da sua vida em It Takes Two, uma aventura de plataforma inovadora criada exclusivamente para o jogo co-op.",
+          "preco": 49.9,
+          "categoria": "PS5",
+          "quantidade": 1
         },
         {
-          "idProduto": "3",
-          "nome": "GTA V (Grand Theft Auto V)",
-          "preco": 199.9,
-          "categoria": "Xbox One",
-          "quantidade": 2
-        },
-        {
-          "idProduto": "4",
-          "nome": "Resident Evil 4",
-          "descricao": "A história segue Leon S. Kennedy, um agente especial dos Estados Unidos, enquanto ele tenta resgatar Ashley Graham, a filha do presidente, que foi sequestrada por um culto sinistro na Espanha.",
+          "idProduto": "33",
+          "nome": "The Witcher 3: Wild Hunt",
+          "imgUrl": "https://www.raimundogamer.com.br/wp-content/uploads/2024/02/THE-W.jpg",
+          "descricao": "Torne-se um mercenário caçador de monstros e embarque em uma épica jornada para encontrar a criança da profecia, uma arma viva capaz de incríveis destruições.",
           "preco": 150,
-          "categoria": "Xbox One",
-          "quantidade": 2
-        },
-        {
-          "idProduto": "5",
-          "nome": "Call of Duty: Black Ops III",
-          "descricao": "É um jogo de tiro em primeira pessoa desenvolvido pela Treyarch e publicado pela Activision.",
-          "preco": 199.9,
-          "categoria": "Xbox One",
-          "quantidade": 2
+          "categoria": "PS5",
+          "quantidade": 3
         }
-      ]
+      ],
+      "dataCompra": "2024-06-10T20:44:22.847Z"
     }
   ]
 }
