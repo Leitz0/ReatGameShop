@@ -1,4 +1,5 @@
 import {
+  Button,
   Paper,
   Table,
   TableBody,
@@ -15,25 +16,26 @@ const columns = [
     id: "categoria",
     label: "Categoria",
     minWidth: 170,
-    align: "right",
   },
   {
     id: "quantidade",
     label: "Quantidade",
     minWidth: 170,
-    align: "right",
   },
   {
     id: "preço",
     label: "Valor unitário",
     minWidth: 170,
-    align: "right",
   },
   {
     id: "preçoTotal",
     label: "Valor total",
     minWidth: 170,
-    align: "right",
+  },
+  {
+    id: "alterar",
+    label: "Alterar quantidade",
+    minWidth: 170,
   },
 ];
 
@@ -82,6 +84,10 @@ export default function TabelaCarrinho({ itens }) {
                     currency: "BRL",
                   })}
                 </TableCell>
+                <TableCell align="center">
+                  <Button variant="contained" color="error">-</Button>
+                  <Button variant="contained" color="success">+</Button>
+                </TableCell>
               </TableRow>
             ))}
           </TableBody>
@@ -95,6 +101,7 @@ export default function TabelaCarrinho({ itens }) {
                   .reduce((acc, item) => acc + item.preco * item.quantidadeComprado, 0)
                   .toLocaleString("pt-br", { style: "currency", currency: "BRL" })}
               </TableCell>
+              <TableCell></TableCell>
             </TableRow>
           </TableFooter>
         </Table>

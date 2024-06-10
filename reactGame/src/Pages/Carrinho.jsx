@@ -47,7 +47,7 @@ export default function Carrinho() {
   return (
     <>
       <Navbar />
-      <Container>
+      <Container maxWidth="xl">
         <Box
           sx={{
             p: 4,
