@@ -43,7 +43,6 @@ const Login = () => {
         return;
       }
       setUsuario(usuario);
-      console.log("Usuário logado:", usuario);
       history.push("/produtos");
     } catch (error) {
       console.error("Erro ao efetuar login:", error);

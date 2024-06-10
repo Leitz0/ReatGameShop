@@ -5,7 +5,7 @@ import {
   Typography,
 } from "@mui/material";
 const CardPedido = ({ pedido }) => {
-  const { id, idUSer, valorTotal, itens, dataCompra } = pedido
+  const { id, valorTotal, itens, dataCompra } = pedido
 
   return (
     <Card sx={{width:'100%', mb: 2}} style={{backgroundColor:'#d3d3ed'}}>
@@ -24,7 +24,7 @@ const CardPedido = ({ pedido }) => {
         </Typography>
         {itens.map(({ idProduto, nome,
           imgUrl, descricao, preco, categoria, quantidade }) => (
-          <CardContent sx={{display:'flex', justifyContent: 'flex-start'}}>
+          <CardContent key={idProduto} sx={{display:'flex', justifyContent: 'flex-start'}}>
             <CardMedia
               component="img"
               sx={{ width: 140, height: 140, objectFit: "contain" }}
