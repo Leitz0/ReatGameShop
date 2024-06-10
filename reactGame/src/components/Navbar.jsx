@@ -71,23 +71,24 @@ export default function Navbar() {
                 sx={{ 
                   cursor: "pointer",
                   ml: 2,
-                 transition: "transform 0.2s ease-in-out", // Adiciona uma transição suave
+                 transition: "transform 0.2s ease-in-out", 
                   "&:hover": {
                     color: "rgba(0, 0, 0, 0.3)",
-                    transform: "scale(1.1)", // Aumenta o tamanho do ícone quando o cursor estiver sobre ele
+                    transform: "scale(1.1)", 
                   },
                  }}
               />
             </Tooltip>
             <Tooltip title="Fazer login">
-              <AccountCircleIcon
+            <AccountCircleIcon
+                onClick={() => history.push("/login")} 
                 sx={{
                   cursor: "pointer",
                   ml: 2,
-                  transition: "transform 0.2s ease-in-out", // Adiciona uma transição suave
+                  transition: "transform 0.2s ease-in-out", 
                   "&:hover": {
                     color: "rgba(0, 0, 0, 0.3)",
-                    transform: "scale(1.1)", // Aumenta o tamanho do ícone quando o cursor estiver sobre ele
+                    transform: "scale(1.1)", 
                   },
                 }}
               />
