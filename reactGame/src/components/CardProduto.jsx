@@ -24,7 +24,7 @@ export default function CardProduto({ produto, saibaMais }) {
       {/* <img src={imgUrl} srcSet={imgUrl} alt="" /> */}
       <CardMedia
         component="img"
-        sx={{ widt: 140, height: 140, objectFit: "contain" }}
+        sx={{ width: 140, height: 140, objectFit: "contain" }}
         image={imgUrl}
         title={nome}
       />
