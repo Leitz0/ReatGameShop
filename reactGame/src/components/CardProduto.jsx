@@ -14,8 +14,7 @@ import ThumbDownOffAltIcon from "@mui/icons-material/ThumbDownOffAlt";
 import ThumbUpOffAltIcon from "@mui/icons-material/ThumbUpOffAlt";
 
 export default function CardProduto({ produto, saibaMais }) {
-  const { id, imgUrl, nome, descricao, preco, categoria, gostei, naoGostei } =
-    produto;
+  const { id, imgUrl, nome, descricao, preco, categoria, gostei, naoGostei } = produto;
   const history = useHistory();
   const { adicionarItem } = useContext(Context);
 
@@ -45,10 +44,10 @@ export default function CardProduto({ produto, saibaMais }) {
           <ThumbDownOffAltIcon style={{ color: "red" }} /> {naoGostei}
         </Typography>
         <Typography variant="body2" display="block" color="text.secondary">
-          {preco.toLocaleString("pt-br", {
-                    style: "currency",
-                    currency: "BRL",
-                  })}
+          {Number(preco).toLocaleString("pt-br", {
+            style: "currency",
+            currency: "BRL",
+          })}
         </Typography>
       </CardContent>
       <CardActions>
