@@ -6,6 +6,7 @@ import Pedido from "../Pages/Pedido";
 import Cadastro from "../Pages/Cadastro";
 import ProdutoDetalhe from "../Pages/ProdutoDetalhe";
 import Carrinho from "../Pages/Carrinho";
+import ProdutosCategoria from "../Pages/ProdutoCategoria";
 
 const Routes = () => {
   return (
@@ -15,7 +16,8 @@ const Routes = () => {
         <Route exact path={"/login"} component={Login} />
         <Route exact path={"/produtos"} component={Produtos} />
         <Route exact path={"/produto/:id"} component={ProdutoDetalhe} />
-        <Route exact path={"/pedidos"} component={Pedido} />
+        <Route exact path={"/produtos/:categoria"} component={ProdutosCategoria} />
+        <Route exact path={"/pedido"} component={Pedido} />
         <Route exact path={"/cadastro"} component={Cadastro} />
         <Route exact path={"/carrinho"} component={Carrinho} />
       </Switch>

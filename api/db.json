@@ -106,8 +106,8 @@
       "preco": 100,
       "categoria": "eletronico",
       "quantidade": 25,
-      "gostei": 30,
-      "naoGostei": 27
+      "gostei": 31,
+      "naoGostei": 29
     },
     {
       "id": "2",
@@ -115,7 +115,7 @@
       "nome": "Teclado",
       "descricao": "Um teclado top",
       "preco": 100,
-      "categoria": "eletronico",
+      "categoria": "perifericos",
       "quantidade": 24,
       "gostei": 9,
       "naoGostei": 8
