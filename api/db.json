@@ -53,6 +53,12 @@
       "nome": "alalal",
       "email": "email@email.com",
       "senha": "123456"
+    },
+    {
+      "id": "1717980617987",
+      "nome": "Lucas coconut",
+      "email": "lucaux.chupapica@gmail.com",
+      "senha": "2813891"
     }
   ],
   "produto": [
@@ -73,10 +79,32 @@
       "nome": "Teclado",
       "descricao": "Um teclado top",
       "preco": 100,
-      "categoria": "eletronico",
+      "categoria": "perifericos",
       "quantidade": 25,
-      "gostei": null,
-      "naoGostei": null
+      "gostei": 10,
+      "naoGostei": 4
+    },
+    {
+      "id": "3",
+      "imgUrl": "https://m.media-amazon.com/images/I/51XqOl8BEQL.__AC_SX300_SY300_QL70_ML2_.jpg",
+      "nome": "Teclado",
+      "descricao": "Um teclado top",
+      "preco": 100,
+      "categoria": "perifericos",
+      "quantidade": 25,
+      "gostei": 9,
+      "naoGostei": 3
+    },
+    {
+      "id": "4",
+      "imgUrl": "https://m.media-amazon.com/images/I/51XqOl8BEQL.__AC_SX300_SY300_QL70_ML2_.jpg",
+      "nome": "Teclado",
+      "descricao": "Um teclado top",
+      "preco": 100,
+      "categoria": "perifericos",
+      "quantidade": 25,
+      "gostei": 9,
+      "naoGostei": 3
     }
   ],
   "pedido": [
