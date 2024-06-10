@@ -32,8 +32,6 @@ export default function Produtos() {
       <Button style={{ margin: "10px" }}  variant="outlined" onClick={() => history.push("/produtos/PS4")}>PS4</Button>
       <Button style={{ margin: "10px" }}  variant="outlined" onClick={() => history.push("/produtos/PS5")}>PS5</Button>
       <Button style={{ margin: "10px" }}  variant="outlined" onClick={() => history.push("/produtos/PC")}>PC</Button>
-
-      <Button style={{ margin: "10px" }}  variant="outlined" onClick={() => history.push("/produtos/outros")}>Outros</Button>
       </div>
       <Container maxWidth={false}>
         <Typography
