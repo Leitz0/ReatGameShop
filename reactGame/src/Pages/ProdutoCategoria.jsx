@@ -3,6 +3,7 @@ import { useParams } from "react-router-dom/cjs/react-router-dom.min";
 import api from "../api/api";
 import CardProduto from "../components/CardProduto";
 import Navbar from "../components/Navbar";
+import Footer from "../components/Footer";
 
 export default function ProdutosCategoria() {
   const { categoria } = useParams();
@@ -29,6 +30,7 @@ export default function ProdutosCategoria() {
           <CardProduto key={produto.id} produto={produto} saibaMais />
         ))}
       </div>
+      <Footer/>
     </>
   );
 }
