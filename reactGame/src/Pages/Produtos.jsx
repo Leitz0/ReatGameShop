@@ -1,3 +1,4 @@
+
 import { useEffect, useState } from "react";
 import { Container, Typography } from "@mui/material";
 import CardProduto from "../components/CardProduto";
@@ -5,6 +6,7 @@ import Navbar from "../components/Navbar";
 import "./Produtos.css";
 import { Button, Link } from "@mui/material";
 import { useHistory } from "react-router-dom/cjs/react-router-dom.min";
+
 
 export default function Produtos() {
   const [produtos, setProdutos] = useState([]);
@@ -24,11 +26,13 @@ export default function Produtos() {
     <>
       <Navbar />
       <div style={{ display: "flex", justifyContent: "center" }}>
-      <Button style={{ margin: "10px" }}  variant="outlined" onClick={() => history.push("/produtos/eletronico")}>Eletrônicos</Button>
-      <Button style={{ margin: "10px" }}  variant="outlined" onClick={() => history.push("/produtos/perifericos")}>Periféricos</Button>
-      <Button style={{ margin: "10px" }}  variant="outlined" onClick={() => history.push("/produtos/jogo")}>Jogos</Button>
-      <Button style={{ margin: "10px" }}  variant="outlined" onClick={() => history.push("/produtos/quadrinho")}>Quadrinhos</Button>
-      <Button style={{ margin: "10px" }}  variant="outlined" onClick={() => history.push("/produtos/actionfigures")}>Action Figures</Button>
+
+      <Button style={{ margin: "10px" }}  variant="outlined" onClick={() => history.push("/produtos/Xbox One")}>Xbox One</Button>
+      <Button style={{ margin: "10px" }}  variant="outlined" onClick={() => history.push("/produtos/Xbox Series")}>Xbox Series</Button>
+      <Button style={{ margin: "10px" }}  variant="outlined" onClick={() => history.push("/produtos/PS4")}>PS4</Button>
+      <Button style={{ margin: "10px" }}  variant="outlined" onClick={() => history.push("/produtos/PS5")}>PS5</Button>
+      <Button style={{ margin: "10px" }}  variant="outlined" onClick={() => history.push("/produtos/PC")}>PC</Button>
+
       <Button style={{ margin: "10px" }}  variant="outlined" onClick={() => history.push("/produtos/outros")}>Outros</Button>
       </div>
       <Container maxWidth={false}>
@@ -51,4 +55,5 @@ export default function Produtos() {
       </Container>
     </>
   );
+
 }
