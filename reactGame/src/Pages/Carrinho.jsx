@@ -6,6 +6,8 @@ import Context from "../context/Context";
 import Navbar from "../components/Navbar";
 import ShoppingCartIcon from "@mui/icons-material/ShoppingCart";
 import api from "../api/api";
+import Footer from "../components/Footer";
+
 
 export default function Carrinho() {
   const {
@@ -53,7 +55,7 @@ export default function Carrinho() {
   return (
     <>
       <Navbar />
-      <Container maxWidth="xl">
+      <Container sx={{minHeight:"90vh"}} maxWidth="xl">
         <Box
           sx={{
             p: 4,
@@ -116,6 +118,7 @@ export default function Carrinho() {
           </Stack>
         </Box>
       </Container>
+      <Footer/>
     </>
   );
 }

@@ -16,6 +16,7 @@ import {
   InputAdornment,
 } from "@mui/material";
 import { Visibility, VisibilityOff } from "@mui/icons-material";
+import Footer from "../components/Footer";
 
 const Login = () => {
   const [username, setUsername] = useState("");
@@ -54,6 +55,7 @@ const Login = () => {
   };
 
   return (
+    <>
     <Container maxWidth="sm">
       <Grid
         container
@@ -144,6 +146,8 @@ const Login = () => {
       </Grid>
       <ModalSenhaIncorreta open={senhaIncorreta} setOpen={setSenhaIncorreta} />
     </Container>
+    <Footer/>
+    </>
   );
 };
 

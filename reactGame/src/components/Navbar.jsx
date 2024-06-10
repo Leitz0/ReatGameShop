@@ -1,4 +1,3 @@
-
 import AdbIcon from "@mui/icons-material/Adb";
 import ShoppingCartIcon from "@mui/icons-material/ShoppingCart";
 import AccountCircleIcon from "@mui/icons-material/AccountCircle";
@@ -19,7 +18,7 @@ export default function Navbar() {
   const { usuario } = useContext(Context);
 
   return (
-    <AppBar position="static">
+    <AppBar position="static" sx={{ bgcolor: '#364B74' }}>
       <Container maxWidth="xl">
         <Toolbar disableGutters>
           <img width={50} height={50} src="/Logo.jpg" alt="" />

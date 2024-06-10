@@ -5,7 +5,9 @@ import Navbar from "../components/Navbar";
 import "./Produtos.css";
 import { Button, Link } from "@mui/material";
 import { useHistory } from "react-router-dom/cjs/react-router-dom.min";
+import Footer from "../components/Footer";
 import { Search } from "@mui/icons-material";
+
 
 
 export default function Produtos() {
@@ -70,6 +72,7 @@ export default function Produtos() {
           ))}
         </div>
       </Container>
+      <Footer/>
     </>
   );
 
