@@ -71,7 +71,6 @@ const Cadastro = () => {
       }
 
       const data = await response.json();
-      console.log("Usuário adicionado:", data);
       setUsuario(data);
       setOpen(true);
     } catch (error) {
