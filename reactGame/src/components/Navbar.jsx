@@ -1,16 +1,22 @@
-import AppBar from "@mui/material/AppBar";
-import Box from "@mui/material/Box";
-import Toolbar from "@mui/material/Toolbar";
-import Typography from "@mui/material/Typography";
-import Container from "@mui/material/Container";
-import Tooltip from "@mui/material/Tooltip";
+
 import AdbIcon from "@mui/icons-material/Adb";
 import ShoppingCartIcon from "@mui/icons-material/ShoppingCart";
 import AccountCircleIcon from "@mui/icons-material/AccountCircle";
 import { useHistory } from "react-router-dom";
+import { useContext } from "react";
+import Context from "../context/Context";
+import {
+  AppBar,
+  Toolbar,
+  Typography,
+  Container,
+  Tooltip,
+  Box,
+} from "@mui/material";
 
 export default function Navbar() {
   const history = useHistory();
+  const { usuario } = useContext(Context);
 
   return (
     <AppBar position="static">
@@ -38,6 +44,23 @@ export default function Navbar() {
           >
             HOME
           </Typography>
+          {usuario?.nome && (
+            <Typography
+              onClick={() => history.push("/produtos")}
+              variant="h6"
+              noWrap
+              component="p"
+              sx={{
+                display: { xs: "none", md: "flex" },
+                fontFamily: "monospace",
+                fontWeight: 700,
+                letterSpacing: ".3rem",
+                textDecoration: "none",
+              }}
+            >
+              Olá {usuario.nome}!
+            </Typography>
+          )}
 
           <Box sx={{ flexGrow: 1, display: { xs: "none", md: "flex" } }}></Box>
 
@@ -57,7 +80,9 @@ export default function Navbar() {
               />
             </Tooltip>
             <Tooltip title="Fazer login">
+
               <AccountCircleIcon    
+
                 sx={{
                   cursor: "pointer",
                   ml: 2,

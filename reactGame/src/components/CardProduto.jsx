@@ -1,13 +1,18 @@
 import { useContext } from "react";
-import Card from "@mui/material/Card";
-import CardActions from "@mui/material/CardActions";
-import CardContent from "@mui/material/CardContent";
-import CardMedia from "@mui/material/CardMedia";
-import Button from "@mui/material/Button";
-import Typography from "@mui/material/Typography";
+import {
+  Card,
+  CardActions,
+  CardContent,
+  CardMedia,
+  Button,
+  Typography,
+} from "@mui/material";
 import { useHistory } from "react-router-dom";
 
 import Context from "../context/Context";
+import api from '../api/api';
+import ThumbDownOffAltIcon from '@mui/icons-material/ThumbDownOffAlt';
+import ThumbUpOffAltIcon from '@mui/icons-material/ThumbUpOffAlt';
 
 export default function CardProduto({ produto, saibaMais }) {
   const { id, imgUrl, nome, descricao, preco, categoria, quantidade, gostei, naoGostei } =
@@ -34,8 +39,11 @@ export default function CardProduto({ produto, saibaMais }) {
         <Typography variant="body2" color="text.secondary">
           {descricao}
         </Typography>
+        <Typography variant="body2" color="text.secondary">
+        <ThumbUpOffAltIcon style={{ color: "green" }} /> {gostei} <ThumbDownOffAltIcon style={{ color: "red" }} /> {naoGostei}
+        </Typography>
         <Typography variant="body2" display="block" color="text.secondary">
-          {preco} R$
+          R${preco}
         </Typography>
       </CardContent>
       <CardActions>
