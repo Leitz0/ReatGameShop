@@ -38,6 +38,7 @@
     }
   ],
   "produto": [
+
     {
       "id": "1",
       "imgUrl": "https://m.media-amazon.com/images/I/61WrR7z-pGL.__AC_SX300_SY300_QL70_ML2_.jpg",
@@ -47,6 +48,7 @@
       "categoria": "eletronico",
       "quantidade": 25
     },
+
     {
       "id": "2",
       "imgUrl": "https://m.media-amazon.com/images/I/51XqOl8BEQL.__AC_SX300_SY300_QL70_ML2_.jpg",
@@ -55,7 +57,638 @@
       "preco": 100,
       "categoria": "eletronico",
       "quantidade": 25
+    },    
+    
+    { 
+        
+        "id": 1,
+        "imgUrl": "https://needgames.com.br/wp-content/uploads/2023/08/ea-sports-fc-xbox-series-s-midia-digital-xbox-series-x.jpg",
+        "nome": "EA Sports FC 24",
+        "descricao": "É um jogo de simulação de futebol desenvolvido pela EA Sports.",
+        "preco": 299.90,
+        "categoria":"Xbox One",
+        "quantidade": 14, 
+        "gostei": 407, 
+        "naoGostei": 7
+        
+     },
+
+    { 
+       
+        "id": 2,
+        "imgUrl": "https://products.eneba.games/resized-products/hX7PgHs0pk8xpBHYDvwV1Vs0AcpIDw15HmIafd8YReE_350x200_1x-0.jpeg",
+        "nome": "Red Dead Redemption 2",
+        "descricao": "É um jogo de ação e aventura desenvolvido pela Rockstar Games. Ambientado no final do século XIX, no Velho Oeste.",
+        "preco": 249.90,
+        "categoria":"Xbox One",
+        "quantidade": 10,
+        "gostei": 456,
+        "naoGostei": 6
+    },
+
+    { 
+       
+        "id": 3,
+        "imgUrl": "https://products.eneba.games/resized-products/YQZ1Li_tMpRT2BjujwMi9lnEsaG6J8vzaaR21MrllB8_350x200_1x-0.jpeg",
+        "nome": "GTA V (Grand Theft Auto V)",
+        "descriçao": "O jogo se passa no estado ficcional de San Andreas, baseado na Califórnia do Sul, e segue três criminosos que tentam realizar assaltos enquanto são perseguidos por diversas forças da lei.",
+        "preco": 199.90,
+        "categoria":"Xbox One",
+        "quantidade": 12,
+        "gostei": 550,
+        "naoGostei": 3
+
+    },
+
+    { 
+        
+        "id": 4,
+        "imgUrl": "https://products.eneba.games/resized-products/efNJ53jAI1DcsKAA4KcKClgG_50zZ3Q8u78eTrZbQ6s_350x200_1x-0.jpeg",
+        "nome": "Resident Evil 4",
+        "descricao": "A história segue Leon S. Kennedy, um agente especial dos Estados Unidos, enquanto ele tenta resgatar Ashley Graham, a filha do presidente, que foi sequestrada por um culto sinistro na Espanha.",
+        "preco": 150.00,
+        "categoria":"Xbox One",
+        "quantidade": 24,
+        "gostei": 300,
+        "naoGostei": 8
+    },
+
+    { 
+       
+        "id": 5,
+        "imgUrl": "https://products.eneba.games/resized-products/fps0E2yXy48KwZzM_z2pCMoSWADMCIx5GTuY4a16ZzM_350x200_1x-0.jpeg",
+        "nome": "Call of Duty: Black Ops III",
+        "descricao": "É um jogo de tiro em primeira pessoa desenvolvido pela Treyarch e publicado pela Activision.",
+        "preco": 199.90,
+        "categoria":"Xbox One",
+        "quantidade": 30,
+        "gostei": 620,
+        "naoGostei": 9
+    },
+
+    {
+       
+        "id": 6,
+        "imgUrl": "https://products.eneba.games/resized-products/8xn_WkSEEwJHCL6RFmE-5JnogTfw418ZGGtAAHRoqA8_350x200_1x-0.jpeg",
+        "nome": "Far Cry 4",
+        "descricao": "o jogador assume o papel de Ajay Ghale, que retorna ao seu país de origem para cumprir o último desejo de sua mãe, apenas para se envolver em uma guerra civil contra o regime opressivo do rei Pagan Min.",
+        "preco": 150.90,
+        "categoria":"Xbox One",
+        "quantidade": 20,
+        "gostei": 576,
+        "naoGostei": 22
+    },
+
+    {
+       
+        "id": 7,
+        "imgUrl": "https://products.eneba.games/resized-products/6VHEHZKRa201zScJf44vJKDP1z7dWt9staeXGAUrfBI_350x200_1x-0.png",
+        "nome": "Hogwarts Legacy",
+        "descricao": "Os jogadores assumem o papel de um estudante da Escola de Magia e Bruxaria de Hogwarts, explorando um mundo mágico.",
+        "preco": 249.90,
+        "categoria":"Xbox One",
+        "quantidade": 50,
+        "gostei": 378,
+        "naoGostei": 15
+    },
+
+    {
+       
+        "id": 8,
+        "imgUrl": "https://products.eneba.games/resized-products/d91y5F34yM-Gf0WStIdIAWtkeCJDN8zej6CZ7Bv1DWo_350x200_1x-0.jpg",
+        "nome": "NBA 2K24",
+        "descricao": "Um jogo de simulação de basquete que oferece uma experiência realista de NBA",
+        "preco": 249.90,
+        "categoria":"Xbox One",
+        "quantidade": 60,
+        "gostei": 243,
+        "naoGostei": 34
+    },
+
+    {
+        "id": 9,
+        "imgUrl": "https://products.eneba.games/resized-products/tj6e5lu4qc2KvmatQWDkzoOUq3Z4m5f_AMmfSFLSIwA_350x200_1x-0.jpeg",
+        "nome": "One Piece: Burning Blood",
+        "descricao": "é um jogo de luta baseado no popular anime e mangá One Piece. O jogo oferece combates dinâmicos e emocionantes.",
+        "preco": 199.90,
+        "categoria":"Xbox One",
+        "quantidade": 35,
+        "gostei": 85,
+        "naoGostei": 15
+    },
+
+    {
+       
+        "id": 10,
+        "imgUrl": "https://products.eneba.games/resized-products/VukUiCtVMHzeiuwJhYdN-b1IZ2gl8peoaM7XwccNhe4_350x200_1x-0.jpeg",
+        "nome": "My Hero Ones Justice",
+        "descricao": "My Hero One's Justice é um jogo de luta baseado no popular anime e mangá My Hero Academia. Os jogadores podem controlar seus heróis e vilões favoritos da série.",
+        "preco": 199.90,
+        "categoria":"Xbox One",
+        "quantidade": 50,
+        "gostei": 120,
+        "naoGostei": 15
+    },
+
+    {
+       
+        "id": 11,
+        "imgUrl": "https://products.eneba.games/resized-products/zsftfcp3XpzDv-bFg1Gwg5hMyIUU-5V1isjEeS5XuS0_350x200_1x-0.png",
+        "nome": "The King of Fighters XV",
+        "descricao": "Ele apresenta uma ampla variedade de personagens icônicos de diversas séries da SNK, como Fatal Fury, Art of Fighting e The King of Fighters.",
+        "preco": 129.90,
+        "categoria":"Xbox Series",
+        "quantidade": 34,
+        "gostei": 234,
+        "naoGostei": 60
+    },
+
+      {
+        
+        "id": 12,
+        "imgUrl": "https://products.eneba.games/resized-products/Cix-vVGdes-IJUNeuVdenN_pVmbZwobiUxyZzAtDHVU_350x200_1x-0.png",
+        "nome": "Steelrising",
+        "descricao": "Steelrising é um jogo de RPG de ação desenvolvido pela Spiders",
+        "preco": 139.90,
+        "categoria":"Xbox Series",
+        "quantidade": 14,
+        "gostei": 46,
+        "naoGostei": 4
+    },
+
+     {
+        "id": 13,
+        "imgUrl": "https://products.eneba.games/resized-products/XJsW66NFx4UfZHY15QZDIzdRoUxjxFJv1Qn2zpRFAcs_350x200_1x-0.jpg",
+        "nome": "Just Dance 2023",
+        "descricao": "É um jogo de dança desenvolvido pela Ubisoft, conhecido por sua jogabilidade envolvente e variedade de músicas e coreografias.",
+        "preco": 99.90,
+        "categoria":"Xbox Series",
+        "quantidade": 12,
+        "gostei": 80,
+        "naoGostei": 6
+    },
+
+     {
+        
+        "id": 14,
+        "imgUrl": "https://products.eneba.games/resized-products/4SphvWQkuwmVRhX9dVLj9OCuz0xtACt8qLTjMKB1tFg_350x200_1x-0.png",
+        "nome": "Dead Space",
+        "descricao": "É um jogo de terror de sobrevivência em terceira pessoa desenvolvido pela Visceral Games e publicado pela Electronic Arts. Ele se passa em uma nave espacial infestada por criaturas alienígenas necromorfas.",
+        "preco": 150,
+        "categoria":"Xbox Series",
+        "quantidade": 52,
+        "gostei": 367,
+        "naoGostei": 34
+    },
+
+     {
+        
+        "id": 15,
+        "imgUrl": "https://products.eneba.games/resized-products/UJa1e8LgXanrinab6TGhIMnOfhVToUsP4jK2KwM8s_4_350x200_1x-0.jpg",
+        "nome": "Mortal Kombat 1",
+        "descricao": "O jogo se destaca por seu combate violento e brutal, com golpes especiais, fatalities e uma variedade de personagens jogáveis.",
+        "preco": 143.90,
+        "categoria":"Xbox Series",
+        "quantidade": 23,
+        "gostei": 678,
+        "naoGostei": 56
+    },
+
+    {
+        "id": 16,
+          "imgUrl": "https://products.eneba.games/resized-products/Miop6GOwewLuOD5bly9B21m10PfgU3Nuc5E-F2gsdkU_350x200_1x-0.png",
+        "nome": "Gotham Knights: Deluxe Editon",
+        "descricao": "é um jogo de ação e aventura que se passa no universo de Batman, mas foca em outros personagens como Batgirl, Nightwing, Red Hood e Robin, que se unem para proteger Gotham City após a suposta morte do Batman.",
+        "preco": 212.01,
+        "categoria":"Xbox Series",
+        "quantidade": 45,
+        "gostei": 234,
+        "naoGostei": 11
+    },
+
+    {
+        "id": 17,
+         "imgUrl": "https://products.eneba.games/resized-products/sqCSvhX5BdNIqLB6RZwhMYCaxbtw1QgZGsWJuWtqeFk_350x200_1x-0.jpg",
+        "nome": "Atlas Fallen",
+        "descricao": "É jogo de videogame RPG de ação desenvolvido pela Deck13 Interactive",
+        "preco": 107.30,
+        "categoria":"Xbox Series",
+        "quantidade": 21,
+        "gostei": 100,
+        "naoGostei": 45
+    },
+
+    {
+        "id": 18,
+        "imgUrl": "https://products.eneba.games/resized-products/bHyWsX7mNGrNpzHsGTIOFotVmmI4jy7FMfK8B87HEJI_350x200_1x-0.jpg",
+        "nome": "Diablo IV",
+        "descricao": "Situado no mundo de Santuário, Diablo IV se passa logo após Diablo III: Reaper of Souls. Cultistas invocaram a principal antagonista e filha de Mephisto, Lilith.",
+        "preco": 118.20,
+        "categoria":"Xbox Series",
+        "quantidade": 23,
+        "gostei": 289,
+        "naoGostei": 24
+    },
+
+    {
+        "id": 19,
+        "imgUrl": "https://products.eneba.games/resized-products/2qmLZA9Iyfq0brzJnP_WWkYM-mtWRd7C9RQhDUHQOgA_350x200_1x-0.png",
+        "nome": "After Us",
+        "descricao": "É um jogo de aventura e sobrevivência pós-apocalíptica em que os jogadores assumem o papel de um sobrevivente em um mundo devastado por uma pandemia global.",
+        "preco": 100.00,
+        "categoria":"Xbox Series",
+        "quantidade": 36,
+        "gostei": 123,
+        "naoGostei": 5
+    },
+
+    {
+        "id": 20,
+        "imgUrl": "https://products.eneba.games/resized-products/6QXQQWlLVHaVOIn8Y8lkAyfnuOOunjxVy2iNRzyc97k_350x200_1x-0.jpg",
+        "nome": "Dragon's Dogma 2 Deluxe Edition",
+        "descricao": "É um RPG de ação ambientado em um mundo de fantasia épica, onde os jogadores assumem o papel de um Arisen, um herói escolhido destinado a enfrentar criaturas monstruosas e desafios épicos. ",
+        "preco": 249.90,
+        "categoria":"Xbox Series",
+        "quantidade": 45,
+        "gostei": 25,
+        "naoGostei": 3
+    },
+
+ 
+    {
+        "id": 21,
+        "imgUrl": "https://www.raimundogamer.com.br/wp-content/uploads/2024/02/1DEATH.jpg",
+        "nome": "DEATH STRANDING",
+        "descricao": "Ele se passa em um mundo pós-apocalíptico onde os jogadores assumem o papel de Sam Porter Bridges, interpretado por Norman Reedus.",
+        "preco": 100,
+        "categoria":"PS4",
+        "quantidade": 21,
+        "gostei": 126,
+        "naoGostei": 2
+    },
+
+    {
+        "id": 22,
+        "imgUrl": "https://www.raimundogamer.com.br/wp-content/uploads/2024/01/watch-dogs-2.jpg",
+        "nome": "Watch Dogs 2",
+        "descricao": "Jogue como Marcus Holloway, um jovem e brilhante hacker que vive no berço da revolução tecnológica, a Bay Area de San Francisco",
+        "preco": 150,
+        "categoria":"PS4",
+        "quantidade": 12,
+        "gostei": 213,
+        "naoGostei": 70
+    },
+
+    {
+        "id": 23,
+        "imgUrl": "https://www.raimundogamer.com.br/wp-content/uploads/2024/01/elde-ring.jpg",
+        "nome": "ELDEN RING",
+        "descricao": "Levante-se, Maculado, e seja guiado pela graça para portar o poder do Anel Prístino e se tornar um Lorde Prístino nas Terras Intermédias.",
+        "preco": 160.90,
+        "categoria":"PS4",
+        "quantidade": 32,
+        "gostei": 101,
+        "naoGostei": 12
+    },
+
+    {
+        "id": 24,
+        "imgUrl": "https://www.raimundogamer.com.br/wp-content/uploads/2024/01/naruto-storm-4.jpg",
+        "nome": "NARUTO SHIPPUDEN: Ultimate Ninja STORM 4",
+        "descricao": "A última obra da aclamada série STORM leva você em uma jornada colorida e de tirar o fôlego. Aproveite o sistema de batalha totalmente renovado e prepare-se para mergulhar nas lutas mais épicas.",
+        "preco": 89.90,
+        "categoria":"PS4",
+        "quantidade": 11,
+        "gostei": 130,
+        "naoGostei": 34
+    },
+
+    {
+        "id": 25,
+        "imgUrl": "https://www.raimundogamer.com.br/wp-content/uploads/2024/01/little-nightmares-2.jpg",
+        "nome": "Little Nightmares II",
+        "descricao": "Volta a um cativante mundo de horror em Little Nightmares II, uma aventura cheia de suspense em que um menino de nome Mono está preso num mundo distorcido pelas transmissões de uma torre distante.",
+        "preco": 79.90,
+        "categoria":"PS4",
+        "quantidade": 10,
+        "gostei": 160,
+        "naoGostei": 25
+    },
+
+    {
+        "id": 26,
+        "imgUrl": "https://www.raimundogamer.com.br/wp-content/uploads/2024/01/minicraft.jpg",
+        "nome": "Minecraft",
+        "descricao": "Explore mundos gerados aleatoriamente e construa das casas mais simples aos maiores castelos. Jogue no modo criativo com recursos ilimitados, ou minere as profundezas do mundo no modo sobrevivência.",
+        "preco": 35.90,
+        "categoria":"PS4",
+        "quantidade": 23,
+        "gostei": 456,
+        "naoGostei": 24
+    },
+
+    {
+        "id": 27,
+        "imgUrl": "https://www.raimundogamer.com.br/wp-content/uploads/2024/01/ps4-god-of-war-ragnarok.jpg",
+        "nome": "GOD OF WAR RAGNAROK ",
+        "descricao": "Junte-se a Kratos e Atreus em uma jornada mítica à procura de respostas na iminência do Ragnarök. Juntos, pai e filho arriscarão tudo viajando por cada um dos Nove Reinos.",
+        "preco": 200,
+        "categoria":"PS4",
+        "quantidade": 33,
+        "gostei": 467,
+        "naoGostei": 34
+    },
+
+    {
+        "id": 28,
+        "imgUrl": "https://www.raimundogamer.com.br/wp-content/uploads/2024/01/dark-souls-remastered.jpg",
+        "nome": "Dark Souls: Remastered",
+        "descricao": "Mas então, fez-se o fogo. Experimente novamente o jogo aclamado pela crítica e definidor de gênero que foi o início tudo. Belamente remasterizado, volte a Lordran com detalhes em alta definição a 60fps.",
+        "preco": 59.90,
+        "categoria":"PS4",
+        "quantidade": 13,
+        "gostei": 450,
+        "naoGostei": 45
+    },
+
+    {
+        "id": 29,
+        "imgUrl": "https://www.raimundogamer.com.br/wp-content/uploads/2024/01/THE-LAST-OF-US.jpg",
+        "nome": "The Last of Us Part II",
+        "descricao": "Cinco anos depois da jornada perigosa pelos Estados Unidos pós-pandêmicos, Ellie e Joel se estabelecem em Jackson, Wyoming. A vida em uma próspera comunidade de sobreviventes lhes trouxe paz e estabilidade, apesar da ameaça constante dos infectados e de outros sobreviventes mais desesperados.",
+        "preco": 99.90,
+        "categoria":"PS4",
+        "quantidade": 40,
+        "gostei": 560,
+        "naoGostei": 30
+    },
+
+
+    {
+        "id": 30,
+        "imgUrl": "https://www.raimundogamer.com.br/wp-content/uploads/2024/01/bully.jpg",
+        "nome": "Bully",
+        "descricao": "No papel de um estudante endiabrado, você irá enfrentar valentões, ser o bode-expiatório de professores, pregar peças, ganhar ou perder a garota e, finalmente, aprender a superar os obstáculos da pior escola da região, a Bullworth Academy.",
+        "preco": 49.90,
+        "categoria":"PS4",
+        "quantidade": 7,
+        "gostei": 100,
+        "naoGostei": 14
+    },
+
+    
+
+    {
+        "id": 31,
+        "imgUrl": "https://www.raimundogamer.com.br/wp-content/uploads/2024/02/CYBER-77.jpg",
+        "nome": "Cyberpunk 2077",
+        "descricao": "Cyberpunk 2077 é uma história de ação e aventura de mundo aberto ambientada em Night City, uma megalópole obcecada por poder, glamour e biomodificações.",
+        "preco": 99.90,
+        "categoria":"PS5",
+        "quantidade": 20,
+        "gostei": 345,
+        "naoGostei": 23
+    },
+
+    {
+        "id": 32,
+        "imgUrl": "https://www.raimundogamer.com.br/wp-content/uploads/2024/02/it-takes-two.jpg",
+        "nome": "It Takes Two",
+        "descricao": "Embarque na jornada mais maluca da sua vida em It Takes Two, uma aventura de plataforma inovadora criada exclusivamente para o jogo co-op.",
+        "preco": 49.90,
+        "categoria":"PS5",
+        "quantidade": 6,
+        "gostei": 34,
+        "naoGostei": 1
+    },
+
+    {
+        "id": 33,
+        "imgUrl": "https://www.raimundogamer.com.br/wp-content/uploads/2024/02/THE-W.jpg",
+        "nome": "The Witcher 3: Wild Hunt",
+        "descricao": "Torne-se um mercenário caçador de monstros e embarque em uma épica jornada para encontrar a criança da profecia, uma arma viva capaz de incríveis destruições.",
+        "preco": 150,
+        "categoria":"PS5",
+        "quantidade": 24,
+        "gostei": 345,
+        "naoGostei": 60
+    },
+
+    {
+        "id": 34,
+        "imgUrl": "https://www.raimundogamer.com.br/wp-content/uploads/2024/05/Design-sem-nome-16.jpg",
+        "nome": "Call of Duty: Modern Warfare",
+        "descricao": "Experimente uma Campanha visceral ou monte sua equipe em uma derradeira experiência online com diversos desafios de Operações Especiais e uma mistura de mapas e modos Multijogador.",
+        "preco": 99.90,
+        "categoria":"PS5",
+        "quantidade": 30,
+        "gostei": 100,
+        "naoGostei": 4
+    },
+
+    {
+        "id": 35,
+        "imgUrl": "https://www.raimundogamer.com.br/wp-content/uploads/2024/05/Design-sem-nome-29.jpg",
+        "nome": "FINAL FANTASY VII REBIRTH",
+        "descricao": "Explore as belas e vastas regiões do mundo e descubra novas áreas para explorar durante a procura pelo Sephiroth.",
+        "preco": 149.90,
+        "categoria":"PS5",
+        "quantidade": 45,
+        "gostei": 650,
+        "naoGostei": 34
+    },
+
+    {
+        "id": 36,
+        "imgUrl": "https://www.raimundogamer.com.br/wp-content/uploads/2024/02/beatllefield-2042.jpg",
+        "nome": "Battlefield 2042",
+        "descricao": "Battlefield 2042 é um jogo de tiro em primeira pessoa que marca o retorno à emblemática guerra total da franquia. Em um mundo num futuro próximo, transformado pela desordem, adapte-se a campos de batalha dinâmicos para superá-los com a ajuda do seu pelotão e de um arsenal de ponta.",
+        "preco": 149.90,
+        "categoria":"PS5",
+        "quantidade": 35,
+        "gostei": 340,
+        "naoGostei": 20
+    },
+
+    {
+        "id": 37,
+        "imgUrl": "https://www.raimundogamer.com.br/wp-content/uploads/2024/02/the-las-1.jpg",
+        "nome": "The Last of Us Parte I",
+        "descricao": "Em uma civilização devastada, onde infectados e sobreviventes veteranos estão à solta, Joel, um protagonista abatido, é contratado para tirar uma garota de 14 anos, Ellie, de uma zona de quarentena militar.",
+        "preco": 199.90,
+        "categoria":"PS5",
+        "quantidade": 50,
+        "gostei": 700,
+        "naoGostei": 4
+    },
+
+    {
+        "id": 38,
+        "imgUrl": "https://www.raimundogamer.com.br/wp-content/uploads/2024/05/Design-sem-nome-2024-05-24T105439.342.jpg",
+        "nome": "The Callisto Protocol Day One",
+        "descricao": "Com a narrativa em terceira pessoa, o jogo de terror e sobrevivência é situado em 300 anos no futuro. O jogador assume o papel de Jacob Lee, que, por obra do destino, é jogado na Prisão de Ferro Negro.",
+        "preco": 129.90,
+        "categoria":"PS5",
+        "quantidade": 23,
+        "gostei": 300,
+        "naoGostei": 30
+    },
+
+    {
+        "id": 39,
+        "imgUrl": "https://www.raimundogamer.com.br/wp-content/uploads/2024/02/SEKIRPO.jpg",
+        "nome": "Sekiro: Shadows Die Twice ",
+        "descricao": "Trilhe seu próprio caminho de vingança nesta premiada aventura da FromSoftware, os criadores de Bloodborne e da franquia Dark Souls.",
+        "preco": 169.90,
+        "categoria":"PS5",
+        "quantidade": 30,
+        "gostei": 400,
+        "naoGostei": 45
+    },
+
+    {
+        "id": 40,
+        "imgUrl": "https://www.raimundogamer.com.br/wp-content/uploads/2024/02/alan-wake-2.jpg",
+        "nome": "Alan Wake 2",
+        "descricao": "Alan Wake é um jogo de ação com forte narrativa. O jogo acontece na pequena cidade fictícia de Bright Falls.",
+        "preco": 139.90,
+        "categoria":"PS5",
+        "quantidade": 25,
+        "gostei": 389,
+        "naoGostei": 56
+    },
+     
+   
+    {
+        "id": 41,
+        "imgUrl": "https://upload.wikimedia.org/wikipedia/pt/6/66/ShadowOfTheColossusGH.jpg",
+        "nome": "SHADOW OF THE COLOSSUS",
+        "descricao": "É uma jornada espetacular por terras antigas em busca de feras gigantes.",
+        "preco": 249.90,
+        "categoria":"PC",
+        "quantidade": 50,
+        "gostei": 500,
+        "naoGostei": 34
+    },
+
+    {
+        "id": 42,
+        "imgUrl": "https://m.media-amazon.com/images/I/71hipJjEHuL._AC_UF1000,1000_QL80_.jpg",
+        "nome": "Battlefield 4",
+        "descricao": "o Battlefield 4 conta com uma campanha dramática, intensa e focada em personagens, que começa com a evacuação de VIPs Americanos de Xangai e acompanha a luta do seu pelotão para encontrar o caminho de casa.",
+        "preco": 214.90,
+        "categoria":"PC",
+        "quantidade": 30,
+        "gostei": 460,
+        "naoGostei": 67
+    },
+
+
+    {
+        "id": 43,
+        "imgUrl": "https://encrypted-tbn2.gstatic.com/shopping?q=tbn:ANd9GcSbcvndbxutzC2v729Dkxv8840zO1Pn1w_y9VvECjFrVbPALcIWlaeS9eOqt5vs8VpKBoMpM3vrCpohMrLRrhZHk_g81DHwXlGqasNvm6-E0gbUpP_RCKjm&usqp=CAc",
+        "nome": "Sid Meier's Civilization VI",
+        "descricao": "É um jogo de estratégia por turnos onde tentas construir um império capaz de resistir ao passar do tempo",
+        "preco": 39.90,
+        "categoria":"PC",
+        "quantidade": 7,
+        "gostei": 100,
+        "naoGostei": 23
+    },
+
+
+    {
+        "id": 44,
+        "imgUrl": "https://http2.mlstatic.com/D_NQ_NP_804965-MLU76434611538_052024-O.webp",
+        "nome": "Euro Truck Simulator 2",
+        "descricao": "Simulador de caminhão.",
+        "preco": 29.15,
+        "categoria":"PC",
+        "quantidade": 21,
+        "gostei": 87,
+        "naoGostei": 3
+    },
+
+
+    {
+        "id": 45,
+        "imgUrl": "https://products.eneba.games/resized-products/QvcgXK3iC3spFl7vLIQ1-hijWXP2wvjGS-Mn_KkC1Gs_350x200_1x-0.jpg",
+        "nome": "Minute of Islands",
+        "descricao": "Desvende uma história poética e emotiva ao enfrentar a verdade sombria escondida sob a superfície das ilhas",
+        "preco": 37.26,
+        "categoria":"PC",
+        "quantidade": 10,
+        "gostei": 90,
+        "naoGostei": 6
+    },
+
+
+    {
+        "id": 46,
+        "imgUrl": "https://products.eneba.games/resized-products/nT93Rq8_350x200_1x-0.jpg",
+        "nome": "Sonic Adventure 2",
+        "descricao": "Faz uma pausa na história principal e desafia um amigo numa corrida de karts para dois jogadores e outros modos de competição!",
+        "preco": 29.90,
+        "categoria":"PC",
+        "quantidade": 12,
+        "gostei": 67,
+        "naoGostei": 13
+    },
+
+
+    {
+        "id": 47,
+        "imgUrl": "https://products.eneba.games/resized-products/mM32x-DfTkFbhVILHpVKNqrMnWRuf_SppUMIePNZW2A_350x200_1x-0.png",
+        "nome": "Mortal Shell: Digital Deluxe Edition",
+        "descricao": "É um complexo RPG de ação implacável que testa a tua sanidade e resiliência num mundo despedaçado. ",
+        "preco": 86.90,
+        "categoria":"PC",
+        "quantidade": 15,
+        "gostei": 70,
+        "naoGostei": 15
+    },
+
+
+    {
+        "id": 48,
+        "imgUrl": "https://products.eneba.games/resized-products/K2v3f43cDkbJT0eWM9JtTevvTShB8l8oEhyzK9VPBVI_350x200_1x-0.jpeg",
+        "nome": "Through the Woods",
+        "descricao": "É uma aventura de horror nórdica na terceira pessoa situada numa floresta da costa oeste norueguesa e conta a história de uma mãe e do seu filho desaparecido",
+        "preco": 29.90,
+        "categoria":"PC",
+        "quantidade": 11,
+        "gostei": 99,
+        "naoGostei": 12
+    },
+
+
+    {
+        "id": 49,
+        "imgUrl": "https://products.eneba.games/resized-products/mbvjvra2hglq3or2irmc_350x200_1x-0.jpg",
+        "nome": "The Evil Within",
+        "descricao": "The Evil Within é a apoteose do significado de puro horror de sobrevivência.",
+        "preco": 69.90,
+        "categoria":"PC",
+        "quantidade": 20,
+        "gostei": 120,
+        "naoGostei": 32
+    },
+
+
+    {
+        "id": 50,
+        "imgUrl": "https://encrypted-tbn0.gstatic.com/shopping?q=tbn:ANd9GcTRAdwrhso-CGx_PukWGkBodTsZXyAXx3KPbNe07xwharWjJMQ1908d2drSwQFafEi0SQoKcquc5NHX4HQcXYCngiPcdVYrfur0aqT-ias&usqp=CAE",
+        "nome": "Tears of Avia",
+        "descricao": "É um jogo de estratégia e tática baseado em turnos ambientado no belo mundo de Estera.",
+        "preco": 49.90,
+        "categoria":"PC",
+        "quantidade": 14,
+        "gostei": 89,
+        "naoGostei": 20
+
     }
+    
+
   ],
   "pedido": [
     {
