@@ -10,7 +10,7 @@ const CardPedido = ({ pedido }) => {
   return (
     <Card sx={{width:'100%', mb: 2}} style={{backgroundColor:'#d3d3ed'}}>
       <CardContent>
-        <Typography gutterBottom variant="h5" component="div" style={{ backgroundColor: '#1976d2', color: 'white' }}>
+        <Typography gutterBottom variant="h5" component="div" style={{ backgroundColor: '#364B74', color: 'white' }}>
           Numero do Pedido: {id}
         </Typography>
         <Typography variant="body2" display="block">

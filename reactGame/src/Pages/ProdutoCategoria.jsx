@@ -25,7 +25,7 @@ export default function ProdutosCategoria() {
     <>
 
       <Navbar />
-      <h1 style={{textAlign:"center"}}>{categoria}</h1>
+      <h1 style={{textAlign:"center",fontFamily:'Roboto', fontSize: '60px' }}>{categoria}</h1>
       <div className="container">
         
         {produtos.map((produto) => (
