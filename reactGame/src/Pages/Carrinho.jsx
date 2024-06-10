@@ -22,9 +22,15 @@ export default function Carrinho() {
       itens: carrinho.map((item) => {
         return {
           idProduto: item.id,
+          nome: item.nome,
+          imgUrl: item.imgUrl,
+          descricao: item.descricao,
+          preco: item.preco,
+          categoria: item.categoria,
           quantidade: item.quantidadeComprado,
         };
       }),
+      dataCompra: new Date().toISOString(),
     });
     if (response.status === 201) {
       carrinho.forEach(async (item) => {
