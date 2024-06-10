@@ -39,7 +39,7 @@ const columns = [
   },
 ];
 
-export default function TabelaCarrinho({ itens }) {
+export default function TabelaCarrinho({ itens, aumentarItemCarrinho, diminuirItemCarrinho}) {
   return (
     <Paper sx={{ width: "100%", overflow: "hidden" }}>
       <TableContainer sx={{ maxHeight: 440 }}>
@@ -85,8 +85,8 @@ export default function TabelaCarrinho({ itens }) {
                   })}
                 </TableCell>
                 <TableCell align="center">
-                  <Button variant="contained" color="error">-</Button>
-                  <Button variant="contained" color="success">+</Button>
+                  <Button onClick={() => diminuirItemCarrinho(row.id)} variant="contained" color="error">-</Button>
+                  <Button onClick={() => aumentarItemCarrinho(row.id)} variant="contained" color="success">+</Button>
                 </TableCell>
               </TableRow>
             ))}

@@ -8,7 +8,13 @@ import ShoppingCartIcon from "@mui/icons-material/ShoppingCart";
 import api from "../api/api";
 
 export default function Carrinho() {
-  const { carrinho, limparCarrinho, usuario } = useContext(Context);
+  const {
+    carrinho,
+    limparCarrinho,
+    usuario,
+    aumentarItemCarrinho,
+    diminuirItemCarrinho,
+  } = useContext(Context);
   const history = useHistory();
 
   const finalizar = async () => {
@@ -70,7 +76,11 @@ export default function Carrinho() {
               Seu carrinho está vazio! :(
             </Typography>
           ) : (
-            <TabelaCarrinho itens={carrinho} />
+            <TabelaCarrinho
+              itens={carrinho}
+              aumentarItemCarrinho={aumentarItemCarrinho}
+              diminuirItemCarrinho={diminuirItemCarrinho}
+            />
           )}
           <br />
           <Stack spacing={2} direction="row" justifyContent="center">
