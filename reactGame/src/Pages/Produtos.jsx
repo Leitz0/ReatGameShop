@@ -1,7 +1,6 @@
 import { useEffect, useState } from "react";
-import Container from "@mui/material/Container";
+import { Container, Typography } from "@mui/material";
 import CardProduto from "../components/CardProduto";
-import Typography from "@mui/material/Typography";
 import Navbar from "../components/Navbar";
 import "./Produtos.css";
 

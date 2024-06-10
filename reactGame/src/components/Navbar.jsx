@@ -1,15 +1,18 @@
-import AppBar from "@mui/material/AppBar";
-import Box from "@mui/material/Box";
-import Toolbar from "@mui/material/Toolbar";
-import Typography from "@mui/material/Typography";
-import Container from "@mui/material/Container";
-import Tooltip from "@mui/material/Tooltip";
+
 import AdbIcon from "@mui/icons-material/Adb";
 import ShoppingCartIcon from "@mui/icons-material/ShoppingCart";
 import AccountCircleIcon from "@mui/icons-material/AccountCircle";
 import { useHistory } from "react-router-dom";
 import { useContext } from "react";
 import Context from "../context/Context";
+import {
+  AppBar,
+  Toolbar,
+  Typography,
+  Container,
+  Tooltip,
+  Box,
+} from "@mui/material";
 
 export default function Navbar() {
   const history = useHistory();
