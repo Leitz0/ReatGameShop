@@ -1,5 +1,5 @@
 import { useState } from "react";
-import {PropTypes} from "prop-types";
+import { PropTypes } from "prop-types";
 import Context from "./Context";
 
 const defaultUsuario = {
@@ -10,8 +10,31 @@ const defaultUsuario = {
 
 export default function Provider({ children }) {
   const [usuario, setUsuario] = useState(defaultUsuario);
+  const [carrinho, setCarrinho] = useState([]);
 
-  return <Context.Provider value={{ usuario, setUsuario }}>{children}</Context.Provider>;
+  const adicionarItem = (produto) => {
+    carrinho.find((item) => item.id === produto.id)
+      ? setCarrinho(
+          carrinho.map((item) =>
+            item.id === produto.id
+              ? { ...item, quantidadeComprado: item.quantidadeComprado + 1 }
+              : item
+          )
+        )
+      : setCarrinho([...carrinho, { ...produto, quantidadeComprado: 1 }]);
+  };
+
+  const limparCarrinho = () => {
+    setCarrinho([]);
+  };
+
+  return (
+    <Context.Provider
+      value={{ usuario, setUsuario, carrinho, adicionarItem, limparCarrinho }}
+    >
+      {children}
+    </Context.Provider>
+  );
 }
 
 Provider.propTypes = {

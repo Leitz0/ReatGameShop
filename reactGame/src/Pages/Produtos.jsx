@@ -1,7 +1,4 @@
 
-export default function Produto() {
-  return <h1>Produto</h1>;
-
 import { useEffect, useState } from "react";
 import { Container, Typography } from "@mui/material";
 import CardProduto from "../components/CardProduto";
@@ -9,7 +6,6 @@ import Navbar from "../components/Navbar";
 import "./Produtos.css";
 import { Button, Link } from "@mui/material";
 import { useHistory } from "react-router-dom/cjs/react-router-dom.min";
-
 
 
 export default function Produtos() {
@@ -30,11 +26,13 @@ export default function Produtos() {
     <>
       <Navbar />
       <div style={{ display: "flex", justifyContent: "center" }}>
+
       <Button style={{ margin: "10px" }}  variant="outlined" onClick={() => history.push("/produtos/Xbox One")}>Xbox One</Button>
       <Button style={{ margin: "10px" }}  variant="outlined" onClick={() => history.push("/produtos/Xbox Series")}>Xbox Series</Button>
       <Button style={{ margin: "10px" }}  variant="outlined" onClick={() => history.push("/produtos/PS4")}>PS4</Button>
       <Button style={{ margin: "10px" }}  variant="outlined" onClick={() => history.push("/produtos/PS5")}>PS5</Button>
       <Button style={{ margin: "10px" }}  variant="outlined" onClick={() => history.push("/produtos/PC")}>PC</Button>
+
       <Button style={{ margin: "10px" }}  variant="outlined" onClick={() => history.push("/produtos/outros")}>Outros</Button>
       </div>
       <Container maxWidth={false}>
@@ -58,5 +56,4 @@ export default function Produtos() {
     </>
   );
 
-};
-
+}
