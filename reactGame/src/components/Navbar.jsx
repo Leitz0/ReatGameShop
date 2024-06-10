@@ -22,14 +22,15 @@ export default function Navbar() {
     <AppBar position="static">
       <Container maxWidth="xl">
         <Toolbar disableGutters>
-          <AdbIcon sx={{ display: { xs: "none", md: "flex" }, mr: 1 }} />
+          <img width={50} height={50} src="/Logo.jpg" alt="" />
+          {/* <AdbIcon sx={{ display: { xs: "none", md: "flex" }, mr: 1 }} /> */}
           <Typography
             onClick={() => history.push("/produtos")}
             variant="h6"
             noWrap
             component="a"
             sx={{
-              mr: 2,
+              margin: "0 5px",
               display: { xs: "none", md: "flex" },
               fontFamily: "monospace",
               fontWeight: 700,

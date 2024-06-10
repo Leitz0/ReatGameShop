@@ -45,7 +45,10 @@ export default function CardProduto({ produto, saibaMais }) {
           <ThumbDownOffAltIcon style={{ color: "red" }} /> {naoGostei}
         </Typography>
         <Typography variant="body2" display="block" color="text.secondary">
-          R${preco}
+          {preco.toLocaleString("pt-br", {
+                    style: "currency",
+                    currency: "BRL",
+                  })}
         </Typography>
       </CardContent>
       <CardActions>
