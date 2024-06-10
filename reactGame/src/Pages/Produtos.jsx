@@ -11,15 +11,13 @@ export default function Produtos() {
     const dados = async () => {
       const data = await fetch("http://localhost:3001/produto");
       const response = await data.json();
-      console.log(response);
-      setProdutos(response);
+      const disponiveis = response.filter((produto) => produto.quantidade > 0);
+      setProdutos(disponiveis);
     };
     dados();
   }, []);
   return (
     <>
-
-
       <Navbar />
       <Container maxWidth={false}>
         <Typography
@@ -39,7 +37,6 @@ export default function Produtos() {
           ))}
         </div>
       </Container>
-
     </>
   );
 }

@@ -4,6 +4,7 @@ import {
   TableBody,
   TableCell,
   TableContainer,
+  TableFooter,
   TableHead,
   TableRow,
 } from "@mui/material";
@@ -84,6 +85,18 @@ export default function TabelaCarrinho({ itens }) {
               </TableRow>
             ))}
           </TableBody>
+          <TableFooter>
+            <TableRow sx={{ backgroundColor: "#f5f5f5" }}>
+              <TableCell colSpan={4} align="right">
+                <strong>Total</strong>
+              </TableCell>
+              <TableCell align="center" sx={{ fontSize: "20px" }}>
+                {itens
+                  .reduce((acc, item) => acc + item.preco * item.quantidadeComprado, 0)
+                  .toLocaleString("pt-br", { style: "currency", currency: "BRL" })}
+              </TableCell>
+            </TableRow>
+          </TableFooter>
         </Table>
       </TableContainer>
     </Paper>

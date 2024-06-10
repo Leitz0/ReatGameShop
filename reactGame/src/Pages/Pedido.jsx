@@ -1,3 +1,7 @@
+import Navbar from "../components/Navbar";
+
 export default function Pedido() {
-  return <h1>Pedido</h1>;
+  return (
+    <Navbar />
+  );
 }
