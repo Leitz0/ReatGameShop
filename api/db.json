@@ -106,8 +106,8 @@
       "preco": 100,
       "categoria": "eletronico",
       "quantidade": 25,
-      "gostei": 3,
-      "naoGostei": 9
+      "gostei": 30,
+      "naoGostei": 27
     },
     {
       "id": "2",
@@ -117,8 +117,8 @@
       "preco": 100,
       "categoria": "eletronico",
       "quantidade": 24,
-      "gostei": null,
-      "naoGostei": null
+      "gostei": 9,
+      "naoGostei": 8
     },
     {
       "id": "3",
@@ -150,8 +150,8 @@
       "preco": 149.9,
       "categoria": "Xbox One",
       "quantidade": 24,
-      "gostei": 301,
-      "naoGostei": 8
+      "gostei": 307,
+      "naoGostei": 21
     }
   ],
   "pedido": [
