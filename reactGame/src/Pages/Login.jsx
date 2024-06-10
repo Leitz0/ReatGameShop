@@ -1,15 +1,17 @@
 import { useState, useContext, useEffect } from "react";
 import { useHistory, Link } from "react-router-dom";
 import Context from "../context/Context";
-import Box from "@mui/material/Box";
-import Input from "@mui/material/Input";
-import InputLabel from "@mui/material/InputLabel";
-import InputAdornment from "@mui/material/InputAdornment";
-import FormControl from "@mui/material/FormControl";
 import AccountCircle from "@mui/icons-material/AccountCircle";
-import Button from "@mui/material/Button";
 import api from "../api/api";
 import ModalSenhaIncorreta from "../components/ModalSenhaIncorreta";
+import {
+  Input,
+  InputLabel,
+  InputAdornment,
+  FormControl,
+  Button,
+  Box,
+} from "@mui/material";
 
 const Login = () => {
   const [username, setUsername] = useState("");
