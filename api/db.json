@@ -89,6 +89,12 @@
       "nome": "lucas",
       "email": "lucas@email.com",
       "senha": "123"
+    },
+    {
+      "id": "67805aa6-40c9-48cd-88e2-647a5233a83b",
+      "nome": "lala",
+      "email": "lala@email.com",
+      "senha": "123"
     }
   ],
   "produto": [
@@ -132,7 +138,7 @@
       "descricao": "O jogo se passa no estado ficcional de San Andreas, baseado na Califórnia do Sul, e segue três criminosos que tentam realizar assaltos enquanto são perseguidos por diversas forças da lei.",
       "preco": 199.9,
       "categoria": "Xbox One",
-      "quantidade": 12,
+      "quantidade": 4,
       "gostei": 550,
       "naoGostei": 3
     },
@@ -161,6 +167,17 @@
         {
           "idProduto": "2",
           "quantidade": 1
+        }
+      ]
+    },
+    {
+      "id": "8dc3",
+      "idUser": "67805aa6-40c9-48cd-88e2-647a5233a83b",
+      "valorTotal": 1599.2,
+      "itens": [
+        {
+          "idProduto": "4",
+          "quantidade": 8
         }
       ]
     }
