@@ -35,6 +35,7 @@ const ProdutoDetalhe = () => {
   return (
     <>
       <Navbar />
+     <br />
       <Container>
         <CardProduto produto={cardProduto} />
         <Typography variant="h4" display="block" color="text.primary">
