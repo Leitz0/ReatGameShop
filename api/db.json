@@ -116,7 +116,7 @@
       "descricao": "Um teclado top",
       "preco": 100,
       "categoria": "eletronico",
-      "quantidade": 25,
+      "quantidade": 24,
       "gostei": null,
       "naoGostei": null
     },
@@ -127,7 +127,7 @@
       "descricao": "É um jogo de ação e aventura desenvolvido pela Rockstar Games. Ambientado no final do século XIX, no Velho Oeste.",
       "preco": 249.9,
       "categoria": "Xbox One",
-      "quantidade": 10,
+      "quantidade": 9,
       "gostei": 456,
       "naoGostei": 6
     },
@@ -178,6 +178,21 @@
         {
           "idProduto": "4",
           "quantidade": 8
+        }
+      ]
+    },
+    {
+      "id": "a47d",
+      "idUser": "67805aa6-40c9-48cd-88e2-647a5233a83b",
+      "valorTotal": 349.9,
+      "itens": [
+        {
+          "idProduto": "3",
+          "quantidade": 1
+        },
+        {
+          "idProduto": "2",
+          "quantidade": 1
         }
       ]
     }
