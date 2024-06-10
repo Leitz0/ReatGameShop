@@ -37,6 +37,9 @@ export default function Navbar() {
               color: "inherit",
               textDecoration: "none",
               cursor: "pointer",
+              ":hover": {
+                    color: "rgba(0, 0, 0, 0.3)", 
+                  },
             }}
           >
             HOME
@@ -65,15 +68,29 @@ export default function Navbar() {
             <Tooltip title="Ver carrinho">
               <ShoppingCartIcon
                 onClick={() => history.push("/carrinho")}
-                sx={{ cursor: "pointer" }}
+                sx={{ 
+                  cursor: "pointer",
+                  ml: 2,
+                 transition: "transform 0.2s ease-in-out", // Adiciona uma transição suave
+                  "&:hover": {
+                    color: "rgba(0, 0, 0, 0.3)",
+                    transform: "scale(1.1)", // Aumenta o tamanho do ícone quando o cursor estiver sobre ele
+                  },
+                 }}
               />
             </Tooltip>
             <Tooltip title="Fazer login">
-              <AccountCircleIcon
-                onClick={() => history.push("/login")}
+
+              <AccountCircleIcon    
+
                 sx={{
                   cursor: "pointer",
                   ml: 2,
+                  transition: "transform 0.2s ease-in-out", // Adiciona uma transição suave
+                  "&:hover": {
+                    color: "rgba(0, 0, 0, 0.3)",
+                    transform: "scale(1.1)", // Aumenta o tamanho do ícone quando o cursor estiver sobre ele
+                  },
                 }}
               />
             </Tooltip>
