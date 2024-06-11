@@ -37,19 +37,35 @@ const ProdutoDetalhe = () => {
     <>
       <Navbar />
      <br />
-      <Container>
-        <CardProduto produto={cardProduto} />
-        <Typography variant="h4" display="block" color="text.primary">
-          Gostou do produto?
-        </Typography>
-        <ButtonGroup variant="contained">
-          <Button color="success" onClick={hadleGosteiClick}>
-            Sim
-          </Button>
-          <Button color="error" onClick={hadleNaoGosteiClick}>
-            Não
-          </Button>
-        </ButtonGroup>
+      <Container >
+        <Container sx={{ 
+          display: 'flex',
+          justifyContent: 'center',
+          alignItems: 'center',
+          // Outras propriedades de estilo podem ser adicionadas aqui
+        }}>
+            <CardProduto   produto={cardProduto} />
+        </Container>
+        <Container sx={{ 
+          display: 'flex',
+          justifyContent: 'center',
+          alignItems: 'center',
+          flexDirection: "column"
+          // Outras propriedades de estilo podem ser adicionadas aqui
+        }}>
+            <Typography variant="h4" display="block" color="text.primary">
+              Gostou do produto?
+            </Typography>
+            <br />
+            <ButtonGroup variant="contained">
+              <Button color="success" onClick={hadleGosteiClick}>
+                Sim
+              </Button>
+              <Button color="error" onClick={hadleNaoGosteiClick}>
+                Não
+              </Button>
+            </ButtonGroup>
+        </Container>
       </Container>
       <Footer/>
     </>
