@@ -127,7 +127,7 @@
       "descriçao": "O jogo se passa no estado ficcional de San Andreas, baseado na Califórnia do Sul, e segue três criminosos que tentam realizar assaltos enquanto são perseguidos por diversas forças da lei.",
       "preco": 199.9,
       "categoria": "Xbox One",
-      "quantidade": 10,
+      "quantidade": 9,
       "gostei": 566,
       "naoGostei": 40
     },
@@ -171,7 +171,7 @@
       "descricao": "Os jogadores assumem o papel de um estudante da Escola de Magia e Bruxaria de Hogwarts, explorando um mundo mágico.",
       "preco": 249.9,
       "categoria": "Xbox One",
-      "quantidade": 50,
+      "quantidade": 48,
       "gostei": 378,
       "naoGostei": 15
     },
@@ -726,6 +726,40 @@
         }
       ],
       "dataCompra": "2024-06-10T20:44:22.847Z"
+    },
+    {
+      "id": "8330",
+      "idUser": "67805aa6-40c9-48cd-88e2-647a5233a83b",
+      "valorTotal": 1199.5,
+      "itens": [
+        {
+          "idProduto": "2",
+          "nome": "Red Dead Redemption 2",
+          "imgUrl": "https://products.eneba.games/resized-products/hX7PgHs0pk8xpBHYDvwV1Vs0AcpIDw15HmIafd8YReE_350x200_1x-0.jpeg",
+          "descricao": "É um jogo de ação e aventura desenvolvido pela Rockstar Games. Ambientado no final do século XIX, no Velho Oeste.",
+          "preco": 249.9,
+          "categoria": "Xbox One",
+          "quantidade": 2
+        },
+        {
+          "idProduto": "3",
+          "nome": "GTA V (Grand Theft Auto V)",
+          "imgUrl": "https://products.eneba.games/resized-products/YQZ1Li_tMpRT2BjujwMi9lnEsaG6J8vzaaR21MrllB8_350x200_1x-0.jpeg",
+          "preco": 199.9,
+          "categoria": "Xbox One",
+          "quantidade": 1
+        },
+        {
+          "idProduto": "7",
+          "nome": "Hogwarts Legacy",
+          "imgUrl": "https://products.eneba.games/resized-products/6VHEHZKRa201zScJf44vJKDP1z7dWt9staeXGAUrfBI_350x200_1x-0.png",
+          "descricao": "Os jogadores assumem o papel de um estudante da Escola de Magia e Bruxaria de Hogwarts, explorando um mundo mágico.",
+          "preco": 249.9,
+          "categoria": "Xbox One",
+          "quantidade": 2
+        }
+      ],
+      "dataCompra": "2024-06-10T22:49:39.215Z"
     }
   ]
 }
