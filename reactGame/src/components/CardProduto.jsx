@@ -19,7 +19,16 @@ export default function CardProduto({ produto, saibaMais }) {
   const { adicionarItem } = useContext(Context);
 
   return (
-    <Card sx={{ maxWidth: 345 }}>
+    <Card sx={{ 
+      width: 300, 
+      boxShadow: "0 12px 24px 0 rgba(0, 0, 0, 0.4)",
+      backgroundColor: "rgba(255, 255, 255, 0.5)",
+      borderRadius: "20px",
+      margin: "10px",
+      padding: "20px",
+      border: "1px solid rgba(255, 255, 255, 0.3)"
+    
+      }}>
       {/* <img src={imgUrl} srcSet={imgUrl} alt="" /> */}
       <CardMedia
         component="img"

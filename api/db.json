@@ -116,7 +116,7 @@
       "descricao": "É um jogo de ação e aventura desenvolvido pela Rockstar Games. Ambientado no final do século XIX, no Velho Oeste.",
       "preco": 249.9,
       "categoria": "Xbox One",
-      "quantidade": 8,
+      "quantidade": 6,
       "gostei": 463,
       "naoGostei": 12
     },
@@ -227,8 +227,8 @@
       "preco": 139.9,
       "categoria": "Xbox Series",
       "quantidade": 14,
-      "gostei": 46,
-      "naoGostei": 4
+      "gostei": 47,
+      "naoGostei": 5
     },
     {
       "id": "13",
@@ -402,7 +402,7 @@
       "descricao": "Mas então, fez-se o fogo. Experimente novamente o jogo aclamado pela crítica e definidor de gênero que foi o início tudo. Belamente remasterizado, volte a Lordran com detalhes em alta definição a 60fps.",
       "preco": 59.9,
       "categoria": "PS4",
-      "quantidade": 13,
+      "quantidade": 12,
       "gostei": 450,
       "naoGostei": 45
     },
@@ -760,6 +760,32 @@
         }
       ],
       "dataCompra": "2024-06-10T22:49:39.215Z"
+    },
+    {
+      "id": "beae",
+      "idUser": "1717897946952",
+      "valorTotal": 559.7,
+      "itens": [
+        {
+          "idProduto": "2",
+          "nome": "Red Dead Redemption 2",
+          "imgUrl": "https://products.eneba.games/resized-products/hX7PgHs0pk8xpBHYDvwV1Vs0AcpIDw15HmIafd8YReE_350x200_1x-0.jpeg",
+          "descricao": "É um jogo de ação e aventura desenvolvido pela Rockstar Games. Ambientado no final do século XIX, no Velho Oeste.",
+          "preco": 249.9,
+          "categoria": "Xbox One",
+          "quantidade": 2
+        },
+        {
+          "idProduto": "28",
+          "nome": "Dark Souls: Remastered",
+          "imgUrl": "https://www.raimundogamer.com.br/wp-content/uploads/2024/01/dark-souls-remastered.jpg",
+          "descricao": "Mas então, fez-se o fogo. Experimente novamente o jogo aclamado pela crítica e definidor de gênero que foi o início tudo. Belamente remasterizado, volte a Lordran com detalhes em alta definição a 60fps.",
+          "preco": 59.9,
+          "categoria": "PS4",
+          "quantidade": 1
+        }
+      ],
+      "dataCompra": "2024-06-11T20:31:24.670Z"
     }
   ]
 }

@@ -17,6 +17,8 @@ export default function Navbar() {
   const history = useHistory();
   const { usuario } = useContext(Context);
 
+
+
   return (
     <AppBar position="static" sx={{ bgcolor: '#364B74' }}>
       <Container maxWidth="xl">

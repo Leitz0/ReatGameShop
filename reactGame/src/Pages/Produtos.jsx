@@ -10,6 +10,7 @@ import { Search } from "@mui/icons-material";
 
 
 
+
 export default function Produtos() {
   const [filtro, setFiltro] = useState('')
   const [produtosFiltrados, setProdutosFiltrados] = useState([])
@@ -51,16 +52,17 @@ export default function Produtos() {
       </div>
       <div style={{ display: "flex", justifyContent: "center", margin: "20px" }}>
       
-      <input type="text" placeholder="Pesquisar produto..." onChange={(p) => (setFiltro(p.target.value))} />
-      <Button style={{ margin: "10px" }} variant="contained" onClick={handlePesquisar}>Pesquisar</Button>
+      <input type="text" style={{border: "1px outset #364b74", borderRadius:"5px"}} placeholder="Pesquisar produto..." onChange={(p) => (setFiltro(p.target.value))} />
+      <Button style={{ margin: "0", backgroundColor:"#364b74" }} variant="contained" onClick={handlePesquisar}><Search /></Button>
       </div>
       <Container maxWidth={false}>
         <Typography
           variant="h2"
           display="block"
           align="center"
-          color="text.primary"
+          
           sx={{
+            color:"#364b74",
             margin: "2rem 0",
           }}
         >
