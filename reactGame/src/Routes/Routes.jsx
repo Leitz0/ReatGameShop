@@ -7,6 +7,7 @@ import Cadastro from "../Pages/Cadastro";
 import ProdutoDetalhe from "../Pages/ProdutoDetalhe";
 import Carrinho from "../Pages/Carrinho";
 import ProdutosCategoria from "../Pages/ProdutoCategoria";
+import NotFound from "../Pages/NotFound";
 
 const Routes = () => {
   return (
@@ -20,6 +21,7 @@ const Routes = () => {
         <Route exact path={"/pedidos"} component={Pedido} />
         <Route exact path={"/cadastro"} component={Cadastro} />
         <Route exact path={"/carrinho"} component={Carrinho} />
+        <Route path="*" component={NotFound} />
       </Switch>
     </BrowserRouter>
   );

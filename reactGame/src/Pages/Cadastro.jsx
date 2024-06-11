@@ -18,6 +18,7 @@ import {
 } from "@mui/material";
 import { Visibility, VisibilityOff } from "@mui/icons-material";
 import { useHistory } from "react-router-dom";
+import Footer from "../components/Footer";
 
 const Cadastro = () => {
   const [nome, setNome] = useState("");
@@ -70,7 +71,6 @@ const Cadastro = () => {
       }
 
       const data = await response.json();
-      console.log("Usuário adicionado:", data);
       setUsuario(data);
       setOpen(true);
     } catch (error) {
@@ -89,6 +89,7 @@ const Cadastro = () => {
   };
 
   return (
+    <>
     <Container maxWidth="sm">
       <Grid
         container
@@ -202,6 +203,8 @@ const Cadastro = () => {
         </DialogActions>
       </Dialog>
     </Container>
+    <Footer/>
+    </>
   );
 };
 

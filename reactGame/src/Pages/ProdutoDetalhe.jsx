@@ -3,6 +3,7 @@ import { useParams } from "react-router-dom/cjs/react-router-dom.min";
 import CardProduto from "../components/CardProduto";
 import api from "../api/api";
 import Navbar from "../components/Navbar";
+import Footer from "../components/Footer";
 import { Container, Typography, Button, ButtonGroup } from "@mui/material";
 
 const ProdutoDetalhe = () => {
@@ -50,6 +51,7 @@ const ProdutoDetalhe = () => {
           </Button>
         </ButtonGroup>
       </Container>
+      <Footer/>
     </>
   );
 };
